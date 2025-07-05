@@ -1,0 +1,115 @@
+.logo {
+  height:70px;
+  float: left;
+  overflow: hidden;
+  /* background-color: #C8E5E6; */
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  /* backdrop-filter: sepia(50%); */
+}
+
+nav {
+    text-align: end;
+    padding: 0% 1%;
+    height: 85px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #ffffff00, #dd6c74);
+    background-image: linear-gradient(90deg, #ffffff00, #0000005d);
+    border-image-slice: 1;
+  }
+  
+  nav li {
+    display: inline-block;
+    text-decoration: 3px underline;
+    text-decoration-color: #ffffff00;
+    transition: text-decoration 1s;
+  }
+
+  nav li:hover {
+    text-decoration-color: #ffffff;
+  }
+
+  nav a {
+    text-decoration:none;
+    color: white;
+    font-weight:700;
+    padding: 6px 10px;
+    margin: 2px;
+  }
+
+
+@media (max-width: 900px) {
+  nav li {display: none;}
+
+  .hamburger-icon {
+    float: right;
+    margin-right: 5%;
+    overflow: hidden;
+    transform: translateY(20%);
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DD6C73;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-405deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(405deg);
+  }
+
+  
+  .dropdown-container {
+    transform: translateY(-200%);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    display: inline-block;
+  
+    border-radius: 15px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+    background-color: #DD6C73;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+
+  }
+
+  .dropdown-option {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    display: block;
+    font-weight: 100;
+  }
+
+  .dropdown-option:hover {
+    font-weight:1000;
+  }
+
+  .reveal-dropdown {
+    transform: translateY(0);
+    position:fixed;
+    top:0;
+
+    display: inline-block;
+    border-radius: 15px;
+    width: 80%;
+    margin-top: 15%;
+    background-color: #DD6C73;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+  }
+}

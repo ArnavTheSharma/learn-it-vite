@@ -1,0 +1,50 @@
+.contactUsPageContainer{
+    height: fit-content;
+    margin-top: 100px;
+}
+ .contact-title{
+    font-size:30px;
+    text-wrap:balance;
+    -webkit-text-fill-color: #8C9AB1; 
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #DAB8C5; 
+ }
+ 
+ /* .form, .info {
+    width: 90%;
+    max-width: 1000px;
+ } */
+
+ .infoText {
+    display: flex;
+    word-break:break-all;
+    text-wrap: wrap;
+ }
+ @media (max-width:900px) {
+    .info {
+        width: 80%;
+    }
+ }
+ 
+ @media (max-width: 768px) {
+    .info, .form {
+        width: 80%;
+    }
+ }
+
+@media (max-width:640px) {
+    .form, .info {
+        width: 70vw;
+        overflow: hidden;
+    }    
+ }
+
+ @media (max-width:400px) {
+    .contactUsPageContainer {
+        width: 250px;
+    }
+    .form, .info {
+        width: 60vw;
+        overflow: hidden;
+    }    
+ }

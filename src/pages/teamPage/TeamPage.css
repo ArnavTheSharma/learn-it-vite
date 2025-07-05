@@ -1,0 +1,103 @@
+.teamPageContainer {
+    background-color: #F7F2F7;
+    text-align: center;
+}
+.teamContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.teamMembers {
+    align-items: center;
+    vertical-align: middle;
+}
+hr {
+    width: 50%;
+}
+
+#aboutTeam {
+    text-wrap: balance;
+    font-size: larger;
+}
+
+#socialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+#socialText{
+    font-size: larger;
+    width: 30%;
+}
+#socialMediaPic{
+    vertical-align: middle;
+    align-items: center;
+}
+#comm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+#commText{
+    font-size: larger;
+    width: 30%;
+}
+#commPic{
+    vertical-align: middle;
+    align-items: center;
+}
+
+.leftCard {
+    margin-left:10vw;
+    height: 100%;
+}
+
+.rightCard {
+    margin-right:10vw;
+    height: 100%;
+}
+@media (max-width: 1000px) {
+    .leftCard, .rightCard {
+        margin:0;
+    }
+    .leftCard {
+        width: 50%;
+    }
+    .rightCard {
+        width: 50%;
+    }   
+    .teamContainer {
+        display: block;
+    }
+    .teamMembers {
+        margin: 5%;
+    }
+    #aboutTeam {
+        width: 80%;
+        margin-left: 10%;
+    }
+    #socialMedia, #comm {
+        display: block;
+    }
+    #socialText, #commText {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+    .cardsParent{
+        flex-direction: column;
+    }
+    .leftCard, .rightCard {
+        width: 80%;
+        margin: 10%;
+    }
+
+}

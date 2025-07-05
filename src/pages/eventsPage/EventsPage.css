@@ -1,0 +1,206 @@
+.EventsListPageContainer {
+    text-align: center;
+}
+
+.eventContainer {
+    /* margin-top: 150px; */
+}
+
+.desc {
+    text-align: center;
+    width: 60%; 
+    text-wrap:pretty;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.eventImg {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.commentSection {
+    margin-left: 50px;
+}
+
+.upcomingContainer{
+    overflow: hidden;
+}
+
+  
+  
+.pastEventsContainer {
+    display: grid;
+    grid-template-areas:
+        'a a a a'
+        'a a a a'
+        'a a a a';
+    gap: 10px;
+    margin-top: 5%;
+    padding: 1%;
+} 
+
+.event-list-item {
+    border:solid #3148863d;
+}
+.event-list-item h1 {
+    font-size: 1.7vw;
+}
+.event-list-item h2 {
+    grid-area: a;
+    color: #643d76;
+    text-wrap:balance;
+    font-size: calc(1vh+1vw);
+}
+
+
+.event-list-item img {
+    height: 20vh;
+}
+
+.event-list-item p {
+    font-size: calc(1vh + 1vw);
+}
+
+
+#add-comment-form {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    width: 90%;
+    padding: 16px;
+}
+
+#add-comment-form h3 {
+    margin-bottom: 16px;
+}
+
+.comment {
+    border-bottom: 2px solid black;
+    padding: 16px;
+}
+
+.comment h4 {
+    color: black;
+}
+
+.hackathonContainer {
+    background-image: radial-gradient(#B63E68, #b63e6800, #b63e6800);
+    height: 70%;
+    margin: auto;
+}
+
+.hackathonImage {
+    margin: auto;
+    max-height: 15vw;
+    overflow-y: scroll;
+    scrollbar-color: #314786 #b63e6878;
+    width: 40%;
+    scrollbar-width:thin; 
+}
+
+.EventsListPageContainer a{
+    text-decoration: none;
+}
+
+.hackathonContainer a:link {
+    color: #2200CC;
+    text-decoration: underline;
+}
+.hackathonContainer a:visited {
+    color:purple;
+}
+.hackathonContainer h3:hover {
+    color: #B63E68;
+    text-decoration-color: #B63E68;
+}
+
+.addCommentParent h3 {
+    margin-bottom:0%;
+}
+.buttonTextAreaParent {
+    padding-left: 5%;
+    width: 90%;
+    display: inline-block;
+}
+.buttonTextAreaParent textarea {
+    width: 100%;
+}
+.buttonTextAreaParent button {
+    width:30%;
+    float:inline-end;
+    margin-bottom: 1%;
+    position:relative;
+    box-sizing: content-box;
+}
+
+@media (max-width: 1500px) {
+    .pastEventsContainer {
+        grid-template-areas:
+        'a a a a';
+    }
+}
+
+@media (max-width: 1000px) {
+    .pastEventsContainer {
+        grid-template-areas:
+        'a a a';
+    }
+    .event-list-item h1 {
+        font-size: 2vw;
+    }
+
+    .eventContainer {
+        padding-top: -16%;
+        margin-top: 16%;
+    }    
+    .event-list-item h1 {
+        font-size: 2vw;
+    }
+    .hackathonImage {
+        width: 70%;
+        max-height: 20vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .pastEventsContainer {
+        grid-template-areas:
+        'a a';
+    }
+    .event-list-item h1 {
+        font-size: 3vw;
+    }
+    .hackathonImage {
+        max-height: 25vw;
+    }
+    .buttonTextAreaParent button {
+        width: 90%;
+    }
+    .event-list-item p {
+        font-size: calc(1.5vh + 1.5vw);
+    }
+    
+}
+@media (max-width:600px) {
+    .hackathonImage {
+        max-height: 35vw;
+    }
+    .pastEventsContainer {
+        grid-template-areas:
+            'a'
+            'a'
+            'a';
+    }
+}
+
+@media (max-width:500px) {
+    .event-list-item img {
+        height: 15vh;
+    }
+    .hackathonImage {
+        max-height: 45vw;
+    }
+}

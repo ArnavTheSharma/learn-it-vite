@@ -1,0 +1,26 @@
+.createContainer {
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    background-image: conic-gradient(#b67c7457, #abaaabad);
+}
+
+.box {
+    height: fit-content;
+    width: fit-content;
+    padding: 2%;
+    margin: auto;
+}
+
+.box a {
+    display: block;
+    padding: 3% 0%;
+}
+
+.box button {
+    padding: 3%;
+}
+
+.box input {
+    margin:10px 0 10px 0;
+}
