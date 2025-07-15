@@ -9,9 +9,9 @@ import JoinUs from './pages/joinUsPage/JoinUs';
 import NotFoundPage from './pages/NotFoundPage';
 import TeamPage from './pages/teamPage/TeamPage';
 import EventsListPage from './pages/eventsPage/EventsListPage';
-import LoginPage from './pages/LoginPage';
-import CreateAccountPage from './pages/CreateAccountPage';
-
+// import LoginPage from './pages/LoginPage';
+// import CreateAccountPage from './pages/CreateAccountPage';
+ 
 function App() {
   return (
     <BrowserRouter>
@@ -24,8 +24,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/join-us" element={<JoinUs />} />
             <Route path="/our-team" element={<TeamPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/create-account" element={<CreateAccountPage />} />
+            {/* <Route path="/login" element={<LoginPage />} />
+            <Route path="/create-account" element={<CreateAccountPage />} /> */}
             <Route path="*" element={<NotFoundPage />} /> 
           </Routes>
       </div>

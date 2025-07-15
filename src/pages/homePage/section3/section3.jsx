@@ -1,4 +1,4 @@
-import "./section3.css";
+// import "./section3.css";
 import EventsList from "../../../components/EventsList";
 import pastEvents from '../../eventsPage/pastEventsDesc';
 
