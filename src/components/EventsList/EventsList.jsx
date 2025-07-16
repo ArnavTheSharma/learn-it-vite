@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const EventsList = ({ events }) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-6">
-            {events.map(event => (
+            {events.slice(0,10).map(event => (
                 <Link
                     key={event.name}
                     to={`/events/${event.name}`}
@@ -38,3 +38,4 @@ const EventsList = ({ events }) => {
     );
 };
 
+export default EventsList;

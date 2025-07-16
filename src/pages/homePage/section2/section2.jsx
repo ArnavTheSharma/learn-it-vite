@@ -66,7 +66,7 @@
               </div>
 
 
-            <div className="statistics absolute md:relative invisible md:visible md:w-full align-items:stretch justify-center flex flex-wrap gap-4">
+            <div className="statistics absolute lg:relative invisible lg:visible lg:w-full align-items:stretch justify-center flex flex-wrap gap-4">
               {/* Common card classes */}
               {[
                 { icon: <FaHandshake className="text-white text-2xl md:text-3xl" />, key:1, value: partners, label: "NGO Partners", bg: "bg-[#1A2447]" },
@@ -89,7 +89,29 @@
                 </div>
               ))}
             </div>
-
+          </div>
+          <div className="relative lg:invisible visible w-full align-items:stretch justify-center flex flex-wrap gap-4">
+              {/* Common card classes */}
+              {[
+                { icon: <FaHandshake className="text-white text-2xl md:text-3xl" />, key:1, value: partners, label: "NGO Partners", bg: "bg-[#1A2447]" },
+                { icon: <MdVolunteerActivism className="text-white text-2xl md:text-3xl" />, key:2, value: members, label: "Members", bg: "bg-[#c4a77d]" },
+                { icon: <FcConferenceCall className="text-white text-2xl md:text-3xl" />, key:3, value: countries, label: "Countries", bg: "bg-[#1A2447]" },
+              ].map(({ icon, value, label, bg, key }) => (
+                <div
+                  key={key}
+                  className={`${bg} min-w-[130px] max-w-[20vw] w-full sm:w-[30%] p-4 h-fit rounded-md flex flex-col items-center`}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    {icon}
+                    <div ref={ref}>
+                      <p className="text-white font-bold text-xl md:text-2xl">
+                        {inView ? <CountUp start={0} end={value} duration={2.5} /> : `${value}`}+
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-white font-medium text-sm mt-2">{label}</p>
+                </div>
+              ))}
           </div>
           </>
       );

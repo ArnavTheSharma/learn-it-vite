@@ -6,144 +6,96 @@ import { MdVolunteerActivism } from "react-icons/md";
 import Modal from "../../components/Modal/Modal";
 import { useState } from "react";
 
+
 function JoinUs() {
-    const [general,setGeneral]=useState(false)
-    const [volunteer,setVolunteer]=useState(false)
-    const [positions,setPositions]=useState(false)
-    const [rebrand,setRebrand]=useState(false)
+    const [general, setGeneral] = useState(false);
+    const [volunteer, setVolunteer] = useState(false);
+    const [positions, setPositions] = useState(false);
+    const [rebrand, setRebrand] = useState(false);
     return (
-        <div className="joinContainer max-w-[1400px] w-[100%] flex flex-col justify-center items-center mx-auto">
-            <div className="flex justify-center items-center">
-                <div className=" flex justify-center flex-col ">
-                    <h1 className="pageTitle">Join Us</h1>
-                    <h4 className="text-center my-0 px-4 text-balance">By joining our organization, you can receive verified volunteer/service hours, valuable leadership experience, and make an impact in your community!</h4>
-                    <div className=" flex justify-center my-5">
-                        {/* <button type="button" className="messageButton rounded-full bg-[#31478600] text-[#314786] text-lg w-[fit-content] py-2">Get Involved Today</button> */}
-                    </div>
-                </div>
+        <div className="joinContainer flex flex-col items-center py-4 px-2">
+            {/* Header Section */}
+            <div className="w-[95%] sm:max-w-[90%] mx-auto flex flex-col items-center mb-6">
+                <h1 className="pageTitle font-serif font-bold text-[#003366] text-5xl md:text-6xl text-center mb-4 drop-shadow">Join Us</h1>
+                <h4 className="text-center text-xl text-[#003366] mb-8 max-w-2xl font-medium">
+                    We're recruiting tutors now! Want to add another leadership opportunity to your resume?
+                    Want volunteer hours? Do you excel in a subject at school? Consider sharing wealth and
+                    tutoring students all over the country
+                </h4>
             </div>
-            
-            <div className="flex items-center justify-normal w-[70vw] sm:w-[50vw] lg:w-[90%] lg:flex-nowrap my-4 mx-0 flex-wrap gap-x-4 md:gap-x-2 gap-y-4 pb-10 h-3/6">
-                <div className="bucket1 flex justify-center items-center flex-col bg-white px-6 py-10 sm:py-3 sm:h-full lg:w-[30vw]">
-                    <FaPeopleGroup />
-                    <h5 className="my-2 text-center">General member application</h5>
-                    <h5 className="font-light my-2 text-center">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</h5>
-                    <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
-                        onClick={()=>setGeneral(true)}
-                    >
+            {/* Application Cards Section */}
+            <div className="w-[95%] sm:max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+                <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
+                    <FaPeopleGroup className="text-[#003366] text-5xl mb-4" />
+                    <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">General Member Application</h5>
+                    <p className="font-light text-gray-700 mb-6 text-center text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</p>
+                    <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setGeneral(true)}>
                         Apply
                     </button>
                 </div>
-                <div className="bucket2 flex justify-center items-center flex-col bg-white px-6 py-10 sm:py-3 sm:h-full lg:w-[30vw]">
-                    <MdVolunteerActivism />
-                    <h5 className="my-2">Volunteer Sign up</h5>
-                    <h5 className="font-light my-2 text-center">
-                        Consider joining our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings! 
-                    </h5>
-                    <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
-                        onClick={()=>setVolunteer(true)}>
+                <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
+                    <MdVolunteerActivism className="text-[#003366] text-5xl mb-4" />
+                    <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">Volunteer Sign Up</h5>
+                    <p className="font-light text-gray-700 mb-6 text-center text-base">Join our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings!</p>
+                    <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setVolunteer(true)}>
                         More
                     </button>
                 </div>
-                <div className="bucket3 flex justify-center items-center flex-col bg-white px-6 py-10 sm:py-3 sm:h-full lg:w-[30vw] ">
-                    <FaSuitcase />
-                    <h5 className="my-2 text-center">New position openings</h5>
-                    <h5 className="font-light my-2 mt-0 text-center">
-                        Learn It is hiring an International Relations Manager and Social Media Co-Manager to expand global reach and manage content for volunteer hours!
-                    </h5>
-                    <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
-                        onClick={()=>setPositions(true)}
-                    >
+                <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
+                    <FaSuitcase className="text-[#003366] text-5xl mb-4" />
+                    <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">New Position Openings</h5>
+                    <p className="font-light text-gray-700 mb-6 text-center text-base">Learn It is hiring an International Relations Manager and Social Media Co-Manager to expand global reach and manage content for volunteer hours!</p>
+                    <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setPositions(true)}>
                         More
                     </button>
                 </div>
-                {/* <div className="bucket4 flex justify-center items-center flex-col bg-white px-6 py-3 sm:h-full xl:w-[24%]  lg:w-[20%] md:w-[18%] sm:w-[40%] w-[100%] ">
-                    <BsExclamationCircle />
-                    <h5 className="my-2 text-center"><span>NEW Opportunity!</span> Join our website rebranding team</h5>
-                    <h5 className="font-light my-2 text-center">
-                    We are thrilled to share that Learn It is embarking on an exciting project to improve our website, and we need your help.
-                    </h5>
-                    <button type="button" className="rounded-3xl font-normal bg-[#314786] text-white text-base w-[fit-content] border-none py-2 hover:cursor-pointer"
-                        onClick={()=>setRebrand(true)}
-                    >
-                        More
-                    </button>
-                </div> */}
             </div>
-            {/* Modal for general membership */}
+            {/* Modals - Unified, Harmonious Layout */}
             <Modal open={general} change={setGeneral}>
-                <p>Integrated form will be available soon, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeEdhXjwm2WP-_6tFYKegiToCikM93qCdg5r4G3dBsWXhcDg/viewform" target="_blank">google form</a></p>
+                <div className="">
+                    <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">General Member Application</h3>
+                    <p className="text-gray-700 text-base text-center">Integrated form will be available soon.<br/>Please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeEdhXjwm2WP-_6tFYKegiToCikM93qCdg5r4G3dBsWXhcDg/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Google Form</a>.</p>
+                </div>
             </Modal>
-            {/* Modal for volunteers */}
             <Modal open={volunteer} change={setVolunteer}>
-                <h5>Volunteer Sign Up</h5>
-                <ul>
-                    <li>
-                    Want to make an impact in your community all while improving that resumé? Consider joining our 
-                    incredible team of volunteers (and get certified volunteer hours!) 
-                    or apply for any executive board position openings! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank"> Volunteer Sign Up Form</a> 
-                    </li>
-                    <li>
-                    As Learn It is now certified, the volunteer hours you gain by contributing to our organization will have that much more merit! 
-                    Below is the volunteer sign-up form. There are various volunteer opportunities with different levels of commitment 
-                    so you can choose one that is right for you! These hours will help you as you prepare to apply for NHS, 
-                    or if you are already in NHS or another community service organization, these hours will count towards that as well. 
-                    Please forward this form to anyone you may 
-                    know who is in need of volunteer hours and do not hesitate to reach out with any questions, concerns, or feedback! 
-                    </li>
-                </ul>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank" className="ml-10">Sign Up</a>
+                <div className="overflow-y-auto">
+                    <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">Volunteer Sign Up</h3>
+                    <ul className="list-disc pl-6 text-gray-700 mb-3 text-base">
+                        <li className="mb-2">Want to make an impact in your community and improve your resumé? Join our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Volunteer Sign Up Form</a></li>
+                        <li>As Learn It is now certified, the volunteer hours you gain by contributing to our organization will have even more merit! There are various volunteer opportunities with different levels of commitment so you can choose one that is right for you. These hours will help you as you prepare to apply for NHS, or if you are already in NHS or another community service organization, these hours will count towards that as well. Please forward this form to anyone you may know who is in need of volunteer hours and do not hesitate to reach out with any questions, concerns, or feedback!</li>
+                    </ul>
+                    <div className="flex justify-center mt-4">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank" className="bg-[#003366] text-white font-bold rounded-full px-7 py-2 shadow hover:bg-[#002244] transition text-base">Sign Up</a>
+                    </div>
+                </div>
             </Modal>
-            {/* Modal for open positions */}
             <Modal open={positions} change={setPositions}>
-                <h5>New position openings</h5>
-                <ul>
-                    <li>
-                    International Relations Manager: Learn It is officially opening up a new role, an International Manager. 
-                    As Learn It continues to grow worldwide, we are looking for a candidate who can start new chapters of 
-                    Learn It around the world with a team of ambassadors
-                     that they will work with, ultimately increasing the total number of members of Learn It. Interested? <a href="https://docs.google.com/forms/d/e/1FAIpQLScaN-KBg3d1NcdeD0SaPU14FC1-4xhCBsbb-hSCLXjS2NYS-w/viewform?usp=sf_link" target="_blank">Apply</a> 
-                    </li>
-                    <li>
-                    Social media co-manager: The social media co-manager will have access to our TikTok, Instagram, 
-                    Facebook, and Youtube accounts and will receive 1 volunteer hour for every 2 posts. 
-                    This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="https://docs.google.com/forms/d/e/1FAIpQLScfzfA5vRGjasF1_9zzx-qOH_LCMj82ZgDMuBi-Zf-9-4NHOA/viewform" target="_blank">Apply</a> 
-                        <ul><li>Responsibilities Include:</li></ul>
-                        <ol>
-                            <li>
-                            Dedicating at least 2-4 hrs/week to the role.
-                            </li>
-                            <li> Being able to post/publish 3-4 times on TikTok every week.</li>
-                            <li>Collaborating with Mariah Boyce, who would be your social media co-manager.</li>
-                            <li> Communicating with the founders about availability for Executive Committee meetings.</li>
-                            <li>Creating creative, entertaining, and respectful posts/content.</li>
-                        </ol>
-                    </li>
-                </ul>
+                <div className="overflow-y-auto">
+                    <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">New Position Openings</h3>
+                    <ul className="list-disc pl-6 text-gray-700 mb-3 text-base">
+                        <li className="mb-2">International Relations Manager: Learn It is officially opening up a new role, an International Manager. As Learn It continues to grow worldwide, we are looking for a candidate who can start new chapters of Learn It around the world with a team of ambassadors that they will work with, ultimately increasing the total number of members of Learn It. <a href="https://docs.google.com/forms/d/e/1FAIpQLScaN-KBg3d1NcdeD0SaPU14FC1-4xhCBsbb-hSCLXjS2NYS-w/viewform?usp=sf_link" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
+                        <li>Social Media Co-Manager: The social media co-manager will have access to our TikTok, Instagram, Facebook, and Youtube accounts and will receive 1 volunteer hour for every 2 posts. This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="https://docs.google.com/forms/d/e/1FAIpQLScfzfA5vRGjasF1_9zzx-qOH_LCMj82ZgDMuBi-Zf-9-4NHOA/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a>
+                            <ul className="list-disc pl-6 mt-2">
+                                <li>Dedicating at least 2-4 hrs/week to the role.</li>
+                                <li>Being able to post/publish 3-4 times on TikTok every week.</li>
+                                <li>Collaborating with Mariah Boyce, who would be your social media co-manager.</li>
+                                <li>Communicating with the founders about availability for Executive Committee meetings.</li>
+                                <li>Creating creative, entertaining, and respectful posts/content.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </Modal>
-            {/* Modal for rebranding team */}
             <Modal open={rebrand} change={setRebrand}>
-                <h5>NEW Opportunity: Join Our Website Rebranding Team!</h5>
-                <ul>
-                    <li>
-                    We are thrilled to share that Learn It is embarking on an exciting 
-                    project to remake our website, and we need your help. We are looking for talented frontend and backend 
-                    developers to join our team and contribute to this important initiative. 
-                    </li>
-                    <li>
-                    If you are interested in gaining valuable volunteer hours, enhancing your resume, and 
-                    opening doors to future leadership positions, we would love to have you on board.
-                    This is a fantastic opportunity to apply your skills, collaborate with a passionate team, and make a meaningful impact.
-                    </li>
-                    <li>
-                        <a href="../contact-us">
-                        Please contact us, and we will forward it to our tech lead for further coordination.
-                        </a>
-                    </li>
-                    <p>
-                    Thank you for your continued support and dedication to Learn It's mission. We look forward to hearing from you soon!
-                    </p>
-                </ul>
+                <div className="p-6 max-w-lg">
+                    <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">NEW Opportunity: Join Our Website Rebranding Team!</h3>
+                    <ul className="list-disc pl-6 text-gray-700 mb-3 text-base">
+                        <li>We are thrilled to share that Learn It is embarking on an exciting project to remake our website, and we need your help. We are looking for talented frontend and backend developers to join our team and contribute to this important initiative.</li>
+                        <li>If you are interested in gaining valuable volunteer hours, enhancing your resume, and opening doors to future leadership positions, we would love to have you on board. This is a fantastic opportunity to apply your skills, collaborate with a passionate team, and make a meaningful impact.</li>
+                        <li><a href="../contact-us" className="text-[#003366] underline hover:text-[#336699] font-semibold">Please contact us</a>, and we will forward it to our tech lead for further coordination.</li>
+                    </ul>
+                    <p className="text-gray-700 text-center">Thank you for your continued support and dedication to Learn It's mission. We look forward to hearing from you soon!</p>
+                </div>
             </Modal>
         </div>
     );
