@@ -7,15 +7,16 @@
   border-radius: 10px;
   /* backdrop-filter: sepia(50%); */
 }
-
-nav {
-    text-align: end;
-    padding: 0% 1%;
-    height: 85px;
+.navbar {
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(90deg, #ffffff00, #dd6c74);
     background-image: linear-gradient(90deg, #ffffff00, #0000005d);
     border-image-slice: 1;
+}
+nav {
+    text-align: end;
+    padding: 0% 1%;
+    height: 85px;
   }
   
   nav li {
@@ -107,7 +108,22 @@ nav {
     display: inline-block;
     border-radius: 15px;
     width: 80%;
-    margin-top: 15%;
+    margin-top: 12%;
+    background-color: #DD6C73;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 500px) {
+  .reveal-dropdown {
+    transform: translateY(0);
+    position:fixed;
+    top:0;
+
+    display: inline-block;
+    border-radius: 15px;
+    width: 80%;
+    margin-top: 20%;
     background-color: #DD6C73;
     border-radius: 15px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
