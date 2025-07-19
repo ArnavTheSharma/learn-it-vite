@@ -110,7 +110,7 @@ function EventsPage() {
                 )}
                 {/* Share Button */}
                 <button
-                    className="inline-flex items-center gap-1 px-4 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 rounded transition border border-gray-200"
+                    className="inline-flex items-center gap-1 !px-7 py-2 bg-[#DD6C73] hover:!bg-rose-400 text-gray-700 rounded transition border border-gray-200"
                     onClick={() => {
                         if (navigator.share) {
                             navigator.share({
@@ -137,7 +137,7 @@ function EventsPage() {
                     />
                 ) : (
                     <button
-                        className="px-4 py-2 bg-rose-500 text-white rounded mb-4"
+                        className="!px-6 py-2 bg-[#DD6C73] hover:!bg-rose-400 text-white rounded mb-4"
                         onClick={() => { navigate('/login'); }}
                     >
                         Log in to Comment

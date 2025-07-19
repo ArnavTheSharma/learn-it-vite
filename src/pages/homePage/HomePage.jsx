@@ -129,7 +129,7 @@ function HomePage() {
                             href="https://docs.google.com/forms/d/e/1FAIpQLSck_HmiJnyruJe4eiXhYN5hiE_MZuAGcz3gLtl2FMr5wEbCMw/viewform"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#DD6C73] text-white font-bold rounded-lg px-6 py-3 shadow-lg hover:bg-rose-500 transition text-lg mt-auto"
+                            className="bg-[#DD6C73] text-white font-bold rounded-lg px-6 py-3 shadow-lg hover:!bg-rose-400 transition text-lg mt-auto"
                         >
                             Leave Feedback
                         </a>
@@ -145,7 +145,7 @@ function HomePage() {
                             rows={3}
                             placeholder="Drop your suggestions..."
                         />
-                        <button className="!bg-[#DD6C73] text-white font-bold rounded-lg px-6 py-3 shadow-lg hover:!bg-rose-600 cursor-pointer transition text-lg mt-auto">Submit</button>
+                        <button className="!bg-[#DD6C73] text-white font-bold rounded-lg !px-6 py-3 shadow-lg hover:!bg-rose-400 cursor-pointer transition text-lg mt-auto">Submit</button>
                     </div>
                 </div>
             </section>
@@ -171,7 +171,7 @@ function HomePage() {
                                 href="https://learn-it-global-hackathon.devpost.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-[#DD6C73] text-white font-bold rounded-lg px-6 py-3 shadow-lg hover:bg-rose-500 transition text-lg mb-4 w-fit"
+                                className="!bg-[#DD6C73] text-white font-bold rounded-lg px-6 py-3 shadow-lg hover:!bg-rose-400 transition text-lg mb-4 w-fit"
                             >
                                 View Hackathon Details
                             </a>
@@ -179,11 +179,50 @@ function HomePage() {
                                 <h4 className="text-blue-900 text-lg font-semibold mb-2">Sponsors for this event</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {/* Add sponsor logos or names here. Example: */}
-                                    <span className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm">Sponsor 1</span>
-                                    <span className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm">Sponsor 2</span>
-                                    <span className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm">Sponsor 3</span>
+                                    <a href="https://www.desmos.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Desmos
+                                    </a>
+                                    <a href="https://nordvpn.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        NordVPN
+                                    </a>
+                                    <a href="https://nordpass.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        NordPass
+                                    </a>
+                                    <a href="https://www.wolframalpha.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Wolfram
+                                    </a>
+                                    <a href="https://artofproblemsolving.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Art of Problem Solving
+                                    </a>
+                                    <a href="https://www.anshkeys.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        AnshKeys
+                                    </a>
+                                    <a href="https://gen.xyz/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        .xyz
+                                    </a>
+                                    <a href="https://www.interviewcake.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Interview Cake
+                                    </a>
+                                    <a href="https://1password.com/pricing" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        1Password
+                                    </a>
+                                    <a href="https://www.axure.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Axure
+                                    </a>
+                                    <a href="https://www.echo3d.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        echo3D
+                                    </a>
+                                    <a href="https://givemycertificate.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Give My Certificate
+                                    </a>
+                                    <a href="https://kyroz.in/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Kyroz
+                                    </a>
+                                    <a href="https://incogni.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                        Incogni
+                                    </a>
+
                                 </div>
-                                <p className="text-xs text-gray-500 mt-2">Note: Learn It has no sponsors for the nonprofit itself, just this event.</p>
                             </div>
                         </div>
                     </div>

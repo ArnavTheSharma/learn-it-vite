@@ -53,7 +53,7 @@
               <h1 className="title text-base sm:text-[3vw] md:text-[2.2vw]">Breaking Barriers, Building Futures</h1>
 
               {/* <h2 className="title">Our Story</h2> */}
-              <p className="text text-[13px] sm:text-[2.5vw] md:text-[1.7vw] font-medium ">Learn It began as a small passion project from three high school sophomores who wanted to break barriers in STEM education and career-exploration. <span className=" text-[#3e5060]">Now, we have grown to be a 1000-member-plus 501(c)(3) nonprofit with various international platforms!</span></p>
+              <p className="text text-[13px] sm:text-[2.5vw] md:text-[1.7vw] font-medium ">Learn It began as a small passion project from three high school sophomores who wanted to break barriers in STEM education and career-exploration. Now, we have grown to be a 1000-member-plus 501(c)(3) nonprofit with various international platforms!</p>
 
               
               <div className="middle">
