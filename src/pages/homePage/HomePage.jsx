@@ -10,6 +10,20 @@ import UpcomingEventsSlider from "../../components/UpcomingEventsSlider/Upcoming
 import { FaRegCommentDots, FaLightbulb } from "react-icons/fa";
 // If you have a calendar component, import it here:
 // import UpcomingEventsCalendar from "../../components/UpcomingEventsCalendar/UpcomingEventsCalendar";
+import anshKeysLogo from "../../companyLogos/sponsorLogos/anshKeysLogo.png";
+import aopsLogo from "../../companyLogos/sponsorLogos/aopsLogo.png";
+import axureLogo from "../../companyLogos/sponsorLogos/axureLogo.png";
+import desmosLogo from "../../companyLogos/sponsorLogos/desmosLogo.png";
+import echoLogo from "../../companyLogos/sponsorLogos/echoLogo.png";
+import gmcLogo from "../../companyLogos/sponsorLogos/gmcLogo.png";
+import incogniLogo from "../../companyLogos/sponsorLogos/incogniLogo.png";
+import interviewCakeLogo from "../../companyLogos/sponsorLogos/interviewCakeLogo.png";
+import kyrozLogo from "../../companyLogos/sponsorLogos/kyrozLogo.jpg";
+import nordPassLogo from "../../companyLogos/sponsorLogos/nordPassLogo.png";
+import nordVPNLogo from "../../companyLogos/sponsorLogos/nordVPNLogo.png";
+import onePasswordLogo from "../../companyLogos/sponsorLogos/onePasswordLogo.jpg";
+import wolframLogo from "../../companyLogos/sponsorLogos/wolframLogo.jpg";
+import xyzLogo from "../../companyLogos/sponsorLogos/xyzLogo.png";
 
 
 function HomePage() {
@@ -178,50 +192,76 @@ function HomePage() {
                             <div className="mt-2">
                                 <h4 className="text-blue-900 text-lg font-semibold mb-2">Sponsors for this event</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {/* Add sponsor logos or names here. Example: */}
-                                    <a href="https://www.desmos.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Desmos
-                                    </a>
-                                    <a href="https://nordvpn.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        NordVPN
-                                    </a>
-                                    <a href="https://nordpass.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        NordPass
-                                    </a>
-                                    <a href="https://www.wolframalpha.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Wolfram
-                                    </a>
-                                    <a href="https://artofproblemsolving.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Art of Problem Solving
-                                    </a>
-                                    <a href="https://www.anshkeys.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        AnshKeys
-                                    </a>
-                                    <a href="https://gen.xyz/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        .xyz
-                                    </a>
-                                    <a href="https://www.interviewcake.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Interview Cake
-                                    </a>
-                                    <a href="https://1password.com/pricing" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        1Password
-                                    </a>
-                                    <a href="https://www.axure.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Axure
-                                    </a>
-                                    <a href="https://www.echo3d.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        echo3D
-                                    </a>
-                                    <a href="https://givemycertificate.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Give My Certificate
-                                    </a>
-                                    <a href="https://kyroz.in/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Kyroz
-                                    </a>
-                                    <a href="https://incogni.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
-                                        Incogni
-                                    </a>
-
+                                <a href="https://www.anshkeys.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={anshKeysLogo} alt="AnshKeys" className="h-4 w-4 mr-2" />
+                                    AnshKeys
+                                </a>
+                                <a href="https://artofproblemsolving.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={aopsLogo} alt="Art of Problem Solving" className="h-4 w-4 mr-2" />
+                                    Art of Problem Solving
+                                </a>
+                                <a href="https://www.axure.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={axureLogo} alt="Axure" className="h-4 w-4 mr-2" />
+                                    Axure
+                                </a>
+                                <a href="https://www.desmos.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={desmosLogo} alt="Desmos" className="h-4 w-4 mr-2" />
+                                    Desmos
+                                </a>
+                                <a href="https://www.echo3d.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={echoLogo} alt="echo3D" className="h-4 w-4 mr-2" />
+                                    echo3D
+                                </a>
+                                <a href="https://givemycertificate.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={gmcLogo} alt="Give My Certificate" className="h-4 w-4 mr-2" />
+                                    Give My Certificate
+                                </a>
+                                <a href="https://incogni.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={incogniLogo} alt="Incogni" className="h-4 w-4 mr-2" />
+                                    Incogni
+                                </a>
+                                <a href="https://www.interviewcake.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={interviewCakeLogo} alt="Interview Cake" className="h-4 w-4 mr-2" />
+                                    Interview Cake
+                                </a>
+                                <a href="https://kyroz.in/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={kyrozLogo} alt="Kyroz" className="h-4 w-4 mr-2" />
+                                    Kyroz
+                                </a>
+                                <a href="https://nordpass.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={nordPassLogo} alt="NordPass" className="h-4 w-4 mr-2" />
+                                    NordPass
+                                </a>
+                                <a href="https://nordvpn.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={nordVPNLogo} alt="NordVPN" className="h-4 w-4 mr-2" />
+                                    NordVPN
+                                </a>
+                                <a href="https://1password.com/pricing" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={onePasswordLogo} alt="1Password" className="h-4 w-4 mr-2" />
+                                    1Password
+                                </a>
+                                <a href="https://www.wolframalpha.com/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={wolframLogo} alt="Wolfram" className="h-4 w-4 mr-2" />
+                                    Wolfram
+                                </a>
+                                <a href="https://gen.xyz/" target="_blank" rel="noopener noreferrer"
+                                    className="flex items-center bg-blue-100 text-blue-900 px-3 py-1 rounded-full shadow font-semibold text-sm hover:bg-blue-200">
+                                    <img src={xyzLogo} alt=".xyz" className="h-4 w-4 mr-2" />
+                                    .xyz
+                                </a>
                                 </div>
                             </div>
                         </div>
