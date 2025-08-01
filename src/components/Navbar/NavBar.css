@@ -1,11 +1,8 @@
 .logo {
+  margin-top: 0.5%;
   height:70px;
   float: left;
-  overflow: hidden;
-  /* background-color: #C8E5E6; */
-  padding: 5px 10px 5px 10px;
   border-radius: 10px;
-  /* backdrop-filter: sepia(50%); */
 }
 .navbar {
     border-bottom: 3px solid transparent;
@@ -24,7 +21,8 @@ nav {
     text-decoration: 3px underline;
     text-decoration-color: #ffffff00;
     transition: text-decoration 1s;
-  }
+    vertical-align: middle;
+   }
 
   nav li:hover {
     text-decoration-color: #DD6C73;
@@ -43,12 +41,13 @@ nav {
 
 @media (max-width: 900px) {
   nav li {display: none;}
+  nav {padding: 0% 3%;}
+
 
   .hamburger-icon {
     float: right;
-    margin-right: 5%;
+    margin-right: 2%;
     overflow: hidden;
-    transform: translateY(20%);
   }
 
   .bar1, .bar2, .bar3 {

@@ -43,6 +43,8 @@ function EventsListPage() {
                 </div>
             </section>
 
+            
+
             {/* Upcoming Events */}
             <section className='upcomingContainer px-4'>
                 <h2 className='pageTitle font-serif text-4xl font-bold text-navy-800 !mb-4 !mt-16 tracking-tight'>Upcoming Events</h2>

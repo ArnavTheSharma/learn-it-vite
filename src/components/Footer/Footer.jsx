@@ -1,24 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaDiscord, FaTiktok, FaInstagram, FaFacebook, FaLink } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 import logo from "../../companyLogos/learn-it-icon-transparent.png";
 
 function Footer() {
     return (
         <footer className="bg-[#003366]">
             <div className="sm:max-w-[90%] mx-auto w-full  border-rose-200 mt-12">
-                <div className="w-full px-4 py-10 sm:py-12 grid grid-cols-2 sm:grid-cols-3 gap-8 text-center md:text-left">
+                <div className="w-full px-4 py-10 sm:py-12 grid grid-cols-2 sm:grid-cols-3 sm:gap-8 text-center md:text-left">
                     {/* Brand & Copyright */}
                     <div className="flex flex-col items-center md:items-start gap-2">
                         <Link to="/">
-                        <div><img className="logo" src={logo}></img></div>
+                        <div><img className="logo sm:!h-24" src={logo}></img></div>
                         <h2 className="text-2xl font-bold !text-rose-500 tracking-wide mb-1">Learn It</h2>
                         </Link>
                         
                     </div>
 
                     {/* Navigation Links */}
-                    <div className="flex flex-col gap-2 items-center">
+                    <div className="hidden sm:flex flex-col gap-2 items-center">
                         <span className="font-semibold text-white mb-1">Quick Links</span>
                         <Link to="/" className="text-white hover:text-rose-500 transition">Home</Link>
                         <Link to="/events" className="text-white hover:text-rose-500 transition">Events</Link>
@@ -36,12 +37,12 @@ function Footer() {
                             <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-base flex items-center gap-x-2 text-white hover:text-pink-500 transition"><FaInstagram /> Instagram</a>
                             <a href="https://www.facebook.com/your-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-base flex items-center gap-x-2 text-white hover:text-blue-600 transition"><FaFacebook /> Facebook</a>
                             <a href="https://linktr.ee/your-linktree" target="_blank" rel="noopener noreferrer" aria-label="Linktree" className="text-base flex items-center gap-x-2 text-white hover:text-green-500 transition"><FaLink /> Link tree</a>
+                            <a href="mailto:information.learnit@gmail.com" className="text-base flex items-center gap-x-2 text-white hover:text-pink-500 transition"> <CiMail /> Email</a>                         
                         </div>
-                        <a href="mailto:information.learnit@gmail.com" className="text-white w-full text-center hover:text-rose-500 underline transition text-sm">Email: information.learnit@gmail.com</a>
                     </div>
                 </div>
                 <hr className="text-white bg-white  !w-full" />
-                <p className="text-sm text-center text-gray-300 py-2">©2025 by Learn It.</p>
+                <p className="text-sm text-center text-gray-300 py-2">©2025 Learn It. All Rights Reserved.</p>
             </div>
         </footer>
     );

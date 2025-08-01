@@ -10,20 +10,20 @@ import UpcomingEventsSlider from "../../components/UpcomingEventsSlider/Upcoming
 import { FaRegCommentDots, FaLightbulb } from "react-icons/fa";
 // If you have a calendar component, import it here:
 // import UpcomingEventsCalendar from "../../components/UpcomingEventsCalendar/UpcomingEventsCalendar";
-import anshKeysLogo from "../../companyLogos/sponsorLogos/anshKeysLogo.png";
-import aopsLogo from "../../companyLogos/sponsorLogos/aopsLogo.png";
-import axureLogo from "../../companyLogos/sponsorLogos/axureLogo.png";
-import desmosLogo from "../../companyLogos/sponsorLogos/desmosLogo.png";
-import echoLogo from "../../companyLogos/sponsorLogos/echoLogo.png";
-import gmcLogo from "../../companyLogos/sponsorLogos/gmcLogo.png";
-import incogniLogo from "../../companyLogos/sponsorLogos/incogniLogo.png";
-import interviewCakeLogo from "../../companyLogos/sponsorLogos/interviewCakeLogo.png";
-import kyrozLogo from "../../companyLogos/sponsorLogos/kyrozLogo.jpg";
-import nordPassLogo from "../../companyLogos/sponsorLogos/nordPassLogo.png";
-import nordVPNLogo from "../../companyLogos/sponsorLogos/nordVPNLogo.png";
-import onePasswordLogo from "../../companyLogos/sponsorLogos/onePasswordLogo.jpg";
-import wolframLogo from "../../companyLogos/sponsorLogos/wolframLogo.jpg";
-import xyzLogo from "../../companyLogos/sponsorLogos/xyzLogo.png";
+import anshKeysLogo from "../../companyLogos/hackathonSponsorLogos/anshKeysLogo.png";
+import aopsLogo from "../../companyLogos/hackathonSponsorLogos/aopsLogo.png";
+import axureLogo from "../../companyLogos/hackathonSponsorLogos/axureLogo.png";
+import desmosLogo from "../../companyLogos/hackathonSponsorLogos/desmosLogo.png";
+import echoLogo from "../../companyLogos/hackathonSponsorLogos/echoLogo.png";
+import gmcLogo from "../../companyLogos/hackathonSponsorLogos/gmcLogo.png";
+import incogniLogo from "../../companyLogos/hackathonSponsorLogos/incogniLogo.png";
+import interviewCakeLogo from "../../companyLogos/hackathonSponsorLogos/interviewCakeLogo.png";
+import kyrozLogo from "../../companyLogos/hackathonSponsorLogos/kyrozLogo.jpg";
+import nordPassLogo from "../../companyLogos/hackathonSponsorLogos/nordPassLogo.png";
+import nordVPNLogo from "../../companyLogos/hackathonSponsorLogos/nordVPNLogo.png";
+import onePasswordLogo from "../../companyLogos/hackathonSponsorLogos/onePasswordLogo.jpg";
+import wolframLogo from "../../companyLogos/hackathonSponsorLogos/wolframLogo.jpg";
+import xyzLogo from "../../companyLogos/hackathonSponsorLogos/xyzLogo.png";
 
 
 function HomePage() {
@@ -159,7 +159,7 @@ function HomePage() {
                             rows={3}
                             placeholder="Drop your suggestions..."
                         />
-                        <button className="!bg-[#DD6C73] text-white font-bold rounded-lg !px-6 py-3 shadow-lg hover:!bg-rose-400 cursor-pointer transition text-lg mt-auto">Submit</button>
+                        <button  className="!bg-[#DD6C73] text-white font-bold rounded-lg !px-6 py-3 shadow-lg hover:!bg-rose-400 cursor-pointer transition text-lg mt-auto">Submit</button>
                     </div>
                 </div>
             </section>

@@ -11,15 +11,15 @@ function NavBar() {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <div className="navbar fixed w-full top-0 z-90">
-            <nav className="sm:max-w-[95%] mx-auto" >
-                <div><Link to="/"><img className="logo" src={logo} alt="Learn It Logo" /></Link></div>
+        <div className="navbar absolute w-full top-0 z-90">
+            <nav className="mx-auto" >
+                <div><Link to="/"><img className="logo object-center" src={logo} alt="Learn It Logo" /></Link></div>
                 <li><Link to="/" className={isActive("/") ? "!text-[#dd6c74] !font-bold" : " !transition-colors"}>Home</Link></li>
                 <li><Link to="/events" className={isActive("/events") ? "!text-[#dd6c74] !font-bold" : " !transition-colors"}>Events</Link></li>
                 <li><Link to="/join-us" className={isActive("/join-us") ? "!text-[#dd6c74] !font-bold" : " !transition-colors"}>Join Us</Link></li>
                 <li><Link to="/our-team" className={isActive("/our-team") ? "!text-[#dd6c74] !font-bold" : " !transition-colors"}>Our Team</Link></li>
                 <li><Link to="/contact-us" className={isActive("/contact-us") ? "!text-[#dd6c74] !font-bold" : " !transition-colors"}>Contact Us</Link></li>
-                <li>
+                {/* <li>
                     {user
                         ? <a onClick={() => {
                             signOut(getAuth());
@@ -27,7 +27,7 @@ function NavBar() {
                         : <a onClick={() => {
                             navigate('/login');
                         }}>Log In</a>}
-                </li>
+                </li> */}
 
                 <div id="hamburger-icon" className="hamburger-icon" onClick={dropdownReveal}>
                     <div className="bar1"></div>

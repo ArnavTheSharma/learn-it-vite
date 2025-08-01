@@ -37,7 +37,7 @@ function ContactUs() {
                         <input type="email" name="email" id="email" placeholder="Your Email" className="bg-[#eaf1fa] !w-full border border-[#b3c6e0] rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#336699] text-[#003366]" value={email} onChange={(e) => setEmail(e.target.value)} required />
                         <textarea name="message" id="message" placeholder="Your Message" className="bg-[#eaf1fa] !w-full border border-[#b3c6e0] rounded-xl px-4 py-2 min-h-[100px] focus:outline-none focus:ring-2 focus:ring-[#336699] text-[#003366]" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                         {error && <div className="text-red-600 text-sm mb-2">{error}</div>}
-                        <button type="submit" className="rounded-full font-bold !bg-[#003366] cursor-pointer text-white text-lg px-8 py-2 hover:!bg-[#002244] transition-colors w-full shadow">SEND</button>
+                        <button type="submit" className="rounded-full font-bold !bg-[#003366] cursor-pointer !text-white text-lg px-8 py-2 hover:!bg-[#002244] transition-colors w-full shadow">SEND</button>
                     </form>
                 </div>
                 {/* Info Card */}
@@ -60,7 +60,7 @@ function ContactUs() {
                         {/* Co-Founders Dropdown */}
                         <div className='bg-white rounded-xl p-4 relative shadow-sm'>
                             <button type="button" className="w-full cursor-pointer flex items-center justify-between text-base font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1" onClick={() => setShowFounder((v) => !v)}>
-                                <span className="flex items-center gap-x-1">Email <CgMail /> the Co-Founders</span>
+                                <span className="flex items-center gap-x-1">Email <CgMail />: Co-Founders</span>
                                 {showFounders ? <MdKeyboardArrowUp className='text-xl' /> : <MdKeyboardArrowDown className='text-xl' />}
                             </button>
                             {showFounders && (
@@ -74,7 +74,7 @@ function ContactUs() {
                         {/* Social Media Manager Dropdown */}
                         <div className='bg-white rounded-xl p-4 relative shadow-sm'>
                             <button type="button" className="w-full cursor-pointer flex items-center justify-between text-base font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1" onClick={() => setShowSMM((v) => !v)}>
-                                <span className="flex items-center gap-x-1">Email <CgMail /> the Social Media Manager</span>
+                                <span className="flex items-center gap-x-1">Email <CgMail />: Social Media Manager</span>
                                 {showSMM ? <MdKeyboardArrowUp className='text-xl' /> : <MdKeyboardArrowDown className='text-xl' />}
                             </button>
                             {showSMM && (
@@ -85,8 +85,8 @@ function ContactUs() {
                         </div>
                         {/* Communications Coordinator Dropdown */}
                         <div className='bg-white rounded-xl p-4 relative shadow-sm'>
-                            <button type="button" className="w-full  flex items-center justify-between text-base font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1" onClick={() => setShowComCo((v) => !v)}>
-                                <span className="flex items-center gap-x-1">Email <CgMail /> the Communications Coordinator</span>
+                            <button type="button" className="w-full  flex items-center justify-between !text-sm font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1" onClick={() => setShowComCo((v) => !v)}>
+                                <span className="flex items-center gap-x-1">Email <CgMail />: Communications Coordinator</span>
                                 {showComCo ? <MdKeyboardArrowUp className='text-xl' /> : <MdKeyboardArrowDown className='text-xl' />}
                             </button>
                             {showComCo && (

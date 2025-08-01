@@ -128,7 +128,7 @@ function EventsPage() {
             </div>
 
             {/* Comments Section */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
                 <h3 className="text-lg font-semibold text-gray-700 mb-3">Comments</h3>
                 {user ? (
                     <AddCommentForm
@@ -144,7 +144,7 @@ function EventsPage() {
                     </button>
                 )}
                 <CommentsList comments={eventInfo.comments} />
-            </div>
+            </div> */}
         </div>
     );
 }
