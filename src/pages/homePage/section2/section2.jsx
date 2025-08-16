@@ -90,7 +90,7 @@
               ))}
             </div>
           </div>
-          <div className="relative lg:invisible visible w-full align-items:stretch justify-center flex flex-wrap gap-4">
+          <div className="relative lg:hidden visible w-full align-items:stretch justify-center flex flex-wrap gap-4">
               {/* Common card classes */}
               {[
                 { icon: <FaHandshake className="text-white text-2xl md:text-3xl" />, key:1, value: partners, label: "NGO Partners", bg: "bg-[#1A2447]" },

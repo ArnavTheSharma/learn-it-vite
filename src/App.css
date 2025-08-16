@@ -12,14 +12,20 @@ h1, h2 {
 
 
 button {
-  padding: 16px;
+  padding: 15px 20px 15px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  background-color: #DD6C73;
-  color: white;
+  background-color: white;
+  color: #DD6C73;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 120px;
   border-color: #DD6C73;
+  border-width: 1px;
+}
+ 
+button:hover {
+  background-color: #FCF2F3;
+  
 }
 
 /* #root{

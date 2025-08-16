@@ -102,7 +102,7 @@ function HomePage() {
                     <div className="flex items-center justify-center !z-[99]">
                         <button
                             onClick={() => { navigate('/join-us'); }}
-                            className="relative !z-[99] cursor-pointer px-5 py-2 w-40 sm:w-48 lg:text-2xl lg:py-3 lg:w-64 font-medium text-white group">
+                            className="relative !z-[99] cursor-pointer px-5 py-2 w-40 sm:w-48 lg:text-2xl lg:py-3 lg:w-64 font-medium !border-0 !text-white group">
                             <span className="pointer-events-none absolute inset-0 w-full h-full transition-all duration-200 ease-out transform translate-x-0 -skew-x-12 bg-rose-500 group-hover:bg-rose-400 group-hover:skew-x-12"></span>
                             <span className="pointer-events-none absolute inset-0 w-full h-full transition-all duration-200 ease-out transform skew-x-12 bg-rose-400 group-hover:bg-rose-500 group-hover:-skew-x-12"></span>
                             <span className="relative">Join Us</span>
@@ -134,7 +134,7 @@ function HomePage() {
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Webinar Feedback Box */}
-                    <div className="bg-white rounded-lg p-8 flex flex-col items-center relative overflow-hidden min-h-[260px]">
+                    <div className="bg-[#FCF2F3] rounded-lg p-8 flex flex-col items-center relative overflow-hidden min-h-[260px]">
                         <div className="absolute top-0 left-0 w-full h-2 bg-rose-400 rounded-t-2xl" />
                         <FaRegCommentDots className="text-rose-400 text-4xl mb-2 mt-2 drop-shadow" />
                         <h3 className="text-[#003366] text-xl font-bold mb-3 text-center">What did you think of our last webinar?</h3>
@@ -149,8 +149,8 @@ function HomePage() {
                         </a>
                     </div>
                     {/* Next event Suggestion Box */}
-                    <div className="bg-[#F1C5B0] !text-white rounded-lg p-8 flex flex-col w-full items-center relative overflow-hidden min-h-[260px]">
-                        <div className="absolute top-0 left-0 w-full h-2 bg-rose-400 rounded-t-2xl" />
+                    <div className="bg-[#a1acbfc1] !text-white rounded-lg p-8 flex flex-col w-full items-center relative overflow-hidden min-h-[260px]">
+                        <div className="absolute top-0 left-0 w-full h-2 bg-[#1C4168] rounded-t-2xl" />
                         <FaLightbulb className="text-[#003366] text-4xl mb-2 mt-2 drop-shadow" />
                         <h3 className="text-[#003366] text-xl font-bold mb-3 text-center">What are you looking for next?</h3>
                         <p className="text-[#003366] text-base mb-4 text-center">Drop your suggestions for future events below!</p>
@@ -159,7 +159,7 @@ function HomePage() {
                             rows={3}
                             placeholder="Drop your suggestions..."
                         />
-                        <button  className="!bg-[#DD6C73] text-white font-bold rounded-lg !px-6 py-3 shadow-lg hover:!bg-rose-400 cursor-pointer transition text-lg mt-auto">Submit</button>
+                        <button className="!text-[#1C4168] !border-[#1C4168] font-bold !px-6 py-3 shadow-lg hover:!bg-[#D9DDE8] transition text-lg mt-auto">Submit</button>
                     </div>
                 </div>
             </section>

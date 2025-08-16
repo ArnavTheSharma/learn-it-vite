@@ -1,4 +1,5 @@
 import pastEvents from './pastEventsDesc';
+import upcomingEvents from './upcomingEventsDesc';
 import EventsList from '../../components/EventsList/EventsList';
 import hackathon from "./eventImages/pastEvents/hackathon.png";
 import hackathon2 from "./eventImages/pastEvents/hackathon2.png";
@@ -20,7 +21,7 @@ function EventsListPage() {
                 </div>
                 {/* Main Content */}
                 <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left px-4">
-                    <h1 className="text-5xl sm:text-6xl font-serif font-extrabold text-navy-800 mb-4 tracking-tight leading-tight drop-shadow">Events at Learn It</h1>
+                    <h1 className="text-5xl sm:text-6xl font-serif font-extrabold  mb-4 tracking-tight leading-tight drop-shadow">Events at Learn It</h1>
                     <p className="text-xl sm:text-2xl text-blue-900 max-w-2xl mb-8 font-medium leading-relaxed">
                         Discover, connect, and grow with our vibrant community! From hands-on hackathons to inspiring webinars, every event is designed to empower you on your STEM journey.
                     </p>
@@ -47,11 +48,11 @@ function EventsListPage() {
 
             {/* Upcoming Events */}
             <section className='upcomingContainer px-4'>
-                <h2 className='pageTitle font-serif text-4xl font-bold text-navy-800 !mb-4 !mt-16 tracking-tight'>Upcoming Events</h2>
-                <UpcomingEventsSlider events={pastEvents} />
+                <h2 className='pageTitle font-serif text-4xl font-bold  !mb-4 !mt-16 tracking-tight'>Upcoming Events</h2>
+                <UpcomingEventsSlider events={upcomingEvents} />
                     <p className="mt-6 text-lg text-gray-700 font-medium">To sign up for any events please fill out the 
                         <a 
-                        className="inline-flex gap-1 px-1 text-rose-500 text-navy-300 hover:text-navy-800 hover:underline font-medium" 
+                        className="inline-flex gap-1 px-1 text-blue-800 !hover:underline font-medium" 
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfeEdhXjwm2WP-_6tFYKegiToCikM93qCdg5r4G3dBsWXhcDg/viewform" 
                         target="_blank"
                     >
@@ -72,7 +73,7 @@ function EventsListPage() {
 
             {/* Past Events */}
             <section id="past-events" className="px-4 pb-14">
-                <h2 className="text-4xl font-serif font-bold text-navy-800 !mb-4 !my-16 tracking-tight">Our Past Events</h2>
+                <h2 className="text-4xl font-serif font-bold  !mb-4 !my-16 tracking-tight">Our Past Events</h2>
                 {/* Hackathon Featured Card (optional: uncomment and style if needed) */}
                 {/* ...existing code... */}
                 <EventsList events={pastEvents} /> 

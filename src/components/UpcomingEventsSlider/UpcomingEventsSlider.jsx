@@ -73,7 +73,7 @@ const UpcomingEventsSlider = ({ events }) => {
             <button
                 onClick={prev}
                 aria-label="Previous"
-                className="absolute left-0 z-10 !bg-white cursor-pointer hover:!bg-[#fbe6e8] rounded-full p-2 shadow-lg border border-rose-200 transition disabled:opacity-30 active:scale-90"
+                className="absolute left-0 z-10 !bg-white cursor-pointer hover:!bg-[#fbe6e8] rounded-full p-2 shadow-lg border border-indigo-200 transition disabled:opacity-30 active:scale-90"
                 disabled={total <= visibleCount}
                 style={{ top: '50%', transform: 'translateY(-50%)' }}
             >
@@ -87,7 +87,7 @@ const UpcomingEventsSlider = ({ events }) => {
                     return (
                         <div
                             key={event.name}
-                            className={`group min-w-[220px] max-w-xs bg-white rounded-2xl shadow-xl border border-rose-100 flex-shrink-0 overflow-hidden cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-2xl relative ${getCardAnimation(idx)} ${isActiveCard ? 'ring-4 ring-[#DD6C73] ring-opacity-30 scale-105 z-10' : ''}`}
+                            className={`group min-w-[220px] max-w-xs bg-white rounded-2xl shadow-xl border border-indigo-600 flex-shrink-0 overflow-hidden cursor-pointer transition-transform duration-200 hover:scale-105 hover:shadow-2xl relative ${getCardAnimation(idx)} ${isActiveCard ? 'ring-4 ring-[#DD6C73] ring-opacity-30 scale-105 z-10' : ''}`}
                             onClick={() => navigate(`/events/${event.slug || event.name.replace(/\s+/g, '-').toLowerCase()}`)}
                             tabIndex={0}
                             role="button"
@@ -95,10 +95,10 @@ const UpcomingEventsSlider = ({ events }) => {
                         >
                             <div className="relative h-36 w-full overflow-hidden">
                                 <img src={event.image} alt={event.title} className="h-36 w-full object-cover group-hover:scale-110 transition-transform duration-300" />
-                                <div className="absolute top-2 right-2 bg-[#DD6C73] text-white text-xs px-3 py-1 rounded-full shadow font-semibold group-hover:bg-rose-500 transition">Upcoming</div>
+                                <div className="absolute top-2 right-2 bg-[#DD6C73] text-white text-xs px-3 py-1 rounded-full shadow font-semibold group-hover:bg-indigo-500 transition">Upcoming</div>
                             </div>
                             <div className="p-4 flex flex-col">
-                                <h4 className="font-bold text-[#DD6C73] text-lg mb-1 group-hover:text-rose-600 transition-colors">{event.title}</h4>
+                                <h4 className="font-bold text-[#DD6C73] text-lg mb-1 group-hover:text-indigo-600 transition-colors">{event.title}</h4>
                                 <p className="text-xs text-[#003366] mb-2 font-semibold">{event.date || "TBA"}</p>
                                 <p className="text-xs text-gray-600 line-clamp-2 mb-2">{event.content[0].substring(0, 80)}...</p>
                                 <span className="text-xs text-[#003366] font-bold mt-auto group-hover:underline">View Details</span>
@@ -111,7 +111,7 @@ const UpcomingEventsSlider = ({ events }) => {
             <button
                 onClick={next}
                 aria-label="Next"
-                className="absolute right-0 z-10 cursor-pointer !bg-white hover:!bg-[#fbe6e8] rounded-full p-2 shadow-lg border border-rose-200 transition disabled:opacity-30 active:scale-90"
+                className="absolute right-0 z-10 cursor-pointer !bg-white hover:!bg-[#fbe6e8] rounded-full p-2 shadow-lg border border-indigo-200 transition disabled:opacity-30 active:scale-90"
                 disabled={total <= visibleCount}
                 style={{ top: '50%', transform: 'translateY(-50%)' }}
             >

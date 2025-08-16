@@ -18,7 +18,6 @@ nav {
   
   nav li {
     display: inline-block;
-    text-decoration: 3px underline;
     text-decoration-color: #ffffff00;
     transition: text-decoration 1s;
     vertical-align: middle;
