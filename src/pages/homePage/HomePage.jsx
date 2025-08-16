@@ -1,6 +1,9 @@
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
+import partners1 from "./partners1";
+import partners2 from "./partners2";
+import PartnersSlider from "../../components/PartnersSlider/PartnersSlider";
 
 import Section2 from "./section2/section2";
 import Section3 from "./section3/section3";
@@ -273,33 +276,14 @@ function HomePage() {
             <section className="w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-20 flex flex-col items-center">
                 <h2 className="!text-[#003366] text-3xl pageTitle font-serif font-bold !mt-0 mb-2 text-center tracking-tight">Our Partners in Impact</h2>
                 <p className="text-[#003366] text-lg mb-4 text-center max-w-2xl font-medium">
-                    Together with leading colleges and companies, we're making STEM education accessible for all. <span className="text-[#DD6C73] font-bold">Thank you to our amazing partners for supporting our mission!</span>
+                    Together with our partners, we're making STEM education accessible for all. <span className="text-[#DD6C73] font-bold">Thank you to our amazing partners for supporting our mission!</span>
                 </p>
-                {/* Marquee-style logo strip for visual interest */}
-                <div className="w-full overflow-x-auto py-4 flex justify-center relative">
-                    <div className="flex flex-row items-center gap-10 md:gap-16 px-2 animate-marquee whitespace-nowrap border-y border-blue-100 bg-gradient-to-r from-blue-50 via-white to-blue-50">
-                        {/* Example logos/names, replace with real ones as needed */}
-                        {[
-                            { src: "/src/companyLogos/learn-it-logo.png", alt: "Learn It", label: "Learn It" },
-                            { src: "/src/companyLogos/learn-it-logo.png", alt: "Stanford University", label: "Stanford University" },
-                            { src: "/src/companyLogos/learn-it-logo.png", alt: "Google", label: "Google" },
-                            { src: "/src/companyLogos/learn-it-logo.png", alt: "Beck College Prep", label: "Beck College Prep" },
-                            { src: "/src/companyLogos/learn-it-logo.png", alt: "Meta", label: "Meta" },
-                            { src: "/src/companyLogos/learn-it-logo.png", alt: "UC Berkeley", label: "UC Berkeley" },
-                        ].map((logo, idx) => (
-                            <div
-                                key={logo.label}
-                                ref={logoRefs[idx]}
-                                className={`flex flex-col items-center min-w-[110px] transition-all duration-700 ${logoVisible[idx] ? 'opacity-100 blur-0 scale-100' : 'opacity-0 blur-md scale-95'}`}
-                                style={{ transitionDelay: `${idx * 120}ms` }}
-                            >
-                                <img src={logo.src} alt={logo.alt} className="h-12 w-auto mb-1" />
-                                <span className="text-[#003366] font-semibold text-xs md:text-sm whitespace-nowrap">{logo.label}</span>
-                            </div>
-                        ))}
-                        {/* Add more as needed, or use a horizontal scroll for overflow */}
-                    </div>
+                <div className="w-full overflow-x-auto py-4 justify-center relative">
+                        <PartnersSlider partners={partners1} />
+                        <PartnersSlider partners={partners2} />
                 </div>
+
+                
                 <div className="mt-8 flex flex-col items-center gap-3">
                     <span className="text-[#003366] text-lg font-bold">Let's make an impact together!</span>
                     <span className="text-[#003366] text-base text-center max-w-xl">We're always looking to expand our network of passionate partners. If your college or company shares our vision for accessible STEM education, we'd love to connect!</span>
@@ -312,6 +296,7 @@ function HomePage() {
                         </a>
                     </div>
                 </div>
+
             </section>
 
             {/* Fade-in animation style */}
