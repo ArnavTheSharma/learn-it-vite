@@ -6,7 +6,6 @@ import partners2 from "./partners2";
 import PartnersSlider from "../../components/PartnersSlider/PartnersSlider";
 
 import Section2 from "./section2/section2";
-import Section3 from "./section3/section3";
 import homeImage from "./learn-it-final-product.gif";
 import Footer from "../../components/Footer/Footer";
 import UpcomingEventsSlider from "../../components/UpcomingEventsSlider/UpcomingEventsSlider";
@@ -28,6 +27,10 @@ import onePasswordLogo from "../../companyLogos/hackathonSponsorLogos/onePasswor
 import wolframLogo from "../../companyLogos/hackathonSponsorLogos/wolframLogo.jpg";
 import xyzLogo from "../../companyLogos/hackathonSponsorLogos/xyzLogo.png";
 
+import communityAdvocateLogo from "../../companyLogos/communityAdvocateLogo.png";
+import communityAdvocateFeature from "../../companyLogos/communityAdvocateFeature.png";
+
+import learnItLogo from "../../companyLogos/learn-it-logo.png";
 
 function HomePage() {
     const navigate = useNavigate();
@@ -35,6 +38,7 @@ function HomePage() {
 
     // Fade-in on scroll logic with blur/scale
     const sectionRefs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+    const sectionRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
     const [visible, setVisible] = useState([false, false, false, false, false]);
     // For staggered logo animation
     const logoRefs = Array.from({ length: 6 }, () => useRef());
@@ -95,9 +99,9 @@ function HomePage() {
     return (
         <>
             {/* Landing page */}
-            <div
+            <section
                 ref={sectionRefs[0]}
-                className={`homeContainer mb-12 transition-all duration-700 ${visible[0] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                className={`homeContainer !w-full mb-12 transition-all duration-700 ${visible[0] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <div className="titleWrapper">
                     <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">Learn It</h1>
@@ -105,7 +109,7 @@ function HomePage() {
                     <div className="flex items-center justify-center !z-[99]">
                         <button
                             onClick={() => { navigate('/join-us'); }}
-                            className="relative !z-[99] cursor-pointer px-5 py-2 w-40 sm:w-48 lg:text-2xl lg:py-3 lg:w-64 font-medium !border-0 !text-white group">
+                            className="joinUsButton relative !z-[99] cursor-pointer w-40 sm:w-48 lg:text-2xl lg:py-3 lg:w-64 font-medium !border-0 !text-white group">
                             <span className="pointer-events-none absolute inset-0 w-full h-full transition-all duration-200 ease-out transform translate-x-0 -skew-x-12 bg-rose-500 group-hover:bg-rose-400 group-hover:skew-x-12"></span>
                             <span className="pointer-events-none absolute inset-0 w-full h-full transition-all duration-200 ease-out transform skew-x-12 bg-rose-400 group-hover:bg-rose-500 group-hover:-skew-x-12"></span>
                             <span className="relative">Join Us</span>
@@ -113,27 +117,96 @@ function HomePage() {
                     </div>
                 </div>
                 <img className="image" src={homeImage} alt="Learn It demonstration" />
-            </div>
+            </section>
 
             {/* About Learn It, certifications, Mission */}
-            <div
+            <section
                 ref={sectionRefs[1]}
-                className={`w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[1] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                className={`sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[1] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <Section2 />
-            </div>
-            {/* Preview of Past Events and any Upcoming Events */}
-            <div
-                ref={sectionRefs[2]}
-                className={`w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[2] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+            </section>
+
+
+
+            <section
+            ref={sectionRefs[2]}
+            className={`bg-white transition-all duration-700 ${visible[2] ? "opacity-100 translate-y-0 blur-0 scale-100" : "opacity-0 translate-y-8 blur-md scale-95" }`}
             >
-                <Section3 />
-            </div>
+                <h2 className="text-[#003366] mb-6 ">
+                    Featured in the Community Advocate
+                </h2>
+
+                <div className="w-fit sm:w-full sm:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center text-center lg:text-left gap-5 lg:gap-8">
+                {/* Left: Logo */}
+                <div className="hidden lg:flex justify-center lg:justify-start">
+                    <img
+                    src={communityAdvocateLogo}
+                    alt="Community Advocate Logo"
+                    className=" rounded-xl shadow-lg lg:min-h-30 max-h-30 lg:flex object-cover lg:w-80 border border-blue-200"
+                    />
+                </div>
+
+                  <div class=" hidden lg:inline-block h-cover min-h-[1em] w-0.5 self-stretch bg-[#003366]"></div>
+
+
+                {/* Right: Content */}
+                <div className=" flex flex-col items-center lg:items-start">
+                    <a
+                    href="https://www.communityadvocate.com/education/local-non-profit-organization-created-by-students-for-students/article_a10f414f-9fce-5dfe-a170-8b24c4917baf.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-6"
+                    >
+                    <img
+                        src={communityAdvocateFeature}
+                        alt="Community Advocate Feature"
+                        className="rounded-xl shadow-lg w-full object-contain border border-blue-200"
+                    />
+                    </a>
+
+                    <p className="text-[#003366] text-md max-w-2xl mb-6">
+                    We’re excited to share that Learn It was featured in the{" "}
+                    <span className="font-semibold">Community Advocate</span> newspaper!  
+                    This article highlights our mission to make STEM more accessible and
+                    inspire the next generation of innovators.
+                    </p>
+
+                    <div className="flex flex-wrap items-center justify-center gap-4">
+                    {/* Logo */}
+                    <img
+                        src={communityAdvocateLogo}
+                        alt="Community Advocate Logo"
+                        className="rounded-xl lg:hidden shadow-lg max-h-28 w-auto border border-blue-200"
+                    />
+
+                    {/* Button */}
+                    <a
+                        href="https://www.communityadvocate.com/education/local-non-profit-organization-created-by-students-for-students/article_a10f414f-9fce-5dfe-a170-8b24c4917baf.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="!bg-[#DD6C73] text-white font-bold rounded-lg px-8 py-4 shadow-lg hover:!bg-rose-400 transition text-lg"
+                    >
+                        Read the Full Article
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+            {/* Preview of Past Events and any Upcoming Events */}
+            <section
+                ref={sectionRefs[3]}
+                className={`sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[2] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+            >
+                <Section4 />
+            </section>
 
             {/* Question Boxes Section */}
             <section
-                ref={sectionRefs[3]}
-                className={`w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-12 flex flex-col gap-8 transition-all duration-700 ${visible[3] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                ref={sectionRefs[4]}
+                className={`!w-[80vw] md:!w-[90vw] lg:max-w-[80%] mx-auto mb-12 flex flex-col gap-8 transition-all duration-700 ${visible[3] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Webinar Feedback Box */}
@@ -158,7 +231,7 @@ function HomePage() {
                         <h3 className="text-[#003366] text-xl font-bold mb-3 text-center">What are you looking for next?</h3>
                         <p className="text-[#003366] text-base mb-4 text-center">Drop your suggestions for future events below!</p>
                         <textarea
-                            className="w-full bg-white rounded-lg p-3 text-blue-900 mb-3 resize-none border border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#DD6C73]"
+                            className="w-full bg-white rounded-lg p-3 text-blue-900 mb-3 resize-none border border-[#003366] focus:outline-none focus:ring-1"
                             rows={3}
                             placeholder="Drop your suggestions..."
                         />
@@ -169,8 +242,8 @@ function HomePage() {
 
             {/* Featured Event: Hackathon Section - Redesigned */}
             <div
-                ref={sectionRefs[4]}
-                className={`bg-white mb-12 py-12 transition-all duration-700 ${visible[4] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                ref={sectionRefs[5]}
+                className={`bg-white transition-all duration-700 ${visible[5] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <section className="w-[95vw] sm:w-full sm:max-w-[90%] mx-auto flex flex-col items-center">
                     <div className="bg-white rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row border border-[#003366] overflow-hidden">
@@ -273,31 +346,59 @@ function HomePage() {
             </div>
 
             {/* Colleges & Companies Section - Enhanced */}
-            <section className="w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-20 flex flex-col items-center">
-                <h2 className="!text-[#003366] text-3xl pageTitle font-serif font-bold !mt-0 mb-2 text-center tracking-tight">Our Partners in Impact</h2>
-                <p className="text-[#003366] text-lg mb-4 text-center max-w-2xl font-medium">
-                    Together with our partners, we're making STEM education accessible for all. <span className="text-[#DD6C73] font-bold">Thank you to our amazing partners for supporting our mission!</span>
-                </p>
-                <div className="w-full overflow-x-auto py-4 justify-center relative">
-                        <PartnersSlider partners={partners1} />
-                        <PartnersSlider partners={partners2} />
-                </div>
-
-                
-                <div className="mt-8 flex flex-col items-center gap-3">
-                    <span className="text-[#003366] text-lg font-bold">Let's make an impact together!</span>
-                    <span className="text-[#003366] text-base text-center max-w-xl">We're always looking to expand our network of passionate partners. If your college or company shares our vision for accessible STEM education, we'd love to connect!</span>
-                    <div className="flex flex-col sm:flex-row gap-3 mt-2">
-                        <a href="/contact-us" className="inline-block bg-[#DD6C73] text-white font-bold rounded-lg px-7 py-3 shadow hover:bg-rose-600 transition text-lg">
-                            Partner with us
-                        </a>
-                        <a href="/our-team" className="inline-block bg-[#003366] text-white font-bold rounded-lg px-7 py-3 shadow hover:bg-[#002244] transition text-lg">
-                            Meet the Team
-                        </a>
+            <div
+                ref={sectionRefs[6]}
+                className={`bg-white transition-all duration-700 ${visible[6] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+            >
+                <section className="w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-20 flex flex-col items-center">
+                    <h2 className="!text-[#003366] font-serif font-bold !mt-0 mb-2 text-center tracking-tight">Our Partners in Impact</h2>
+                    <p className="text-[#003366] text-lg mb-4 text-center max-w-2xl font-medium">
+                        Together with our partners, we're making STEM education accessible for all. <span className="text-[#DD6C73] font-bold">Thank you to our amazing partners for supporting our mission!</span>
+                    </p>
+                    <div className="w-full overflow-x-auto py-4 justify-center relative">
+                            <PartnersSlider partners={partners1} />
+                            <PartnersSlider partners={partners2} />
                     </div>
-                </div>
+                </section>
 
-            </section>
+                <section>
+                    <div className="inline-flex">
+                        <div className="mt-12 flex flex-col items-center w-full gap-4 text-center bg-[#F9FAFB] py-10 px-6 rounded-2xl">
+                        <h3 className="text-[#003366] text-2xl md:text-3xl font-extrabold">
+                            Your Next Chapter in STEM Starts Here
+                        </h3>
+                        <p className="text-[#003366] text-base md:text-lg leading-relaxed">
+                            At <span className="font-semibold text-[#DD6C73]">Learn It</span>, we’re not just running programs—
+                            we’re building opportunities. Here, your ideas matter, your skills grow, and your work sparks lasting
+                            change. Whether it’s mentoring students, launching new initiatives, or partnering with mission-driven
+                            teams, you’ll be part of something bigger—making STEM accessible for every learner.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-3 mt-5">
+                            <a
+                            href="/contact-us"
+                            className="inline-block bg-[#DD6C73] text-white font-bold rounded-lg px-7 py-3 shadow hover:bg-rose-600 transition text-lg"
+                            >
+                            Partner with Us
+                            </a>
+                            <a
+                            href="/our-team"
+                            className="inline-block bg-[#003366] text-white font-bold rounded-lg px-7 py-3 shadow hover:bg-[#002244] transition text-lg"
+                            >
+                            Meet the Team
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class=" hidden lg:inline-block h-cover min-h-[1em] w-0.5 self-stretch bg-[#003366]"></div>
+        
+                        <img 
+                            src={learnItLogo} 
+                            alt="Learn It Logo" 
+                            className="hidden lg:block"
+                        />
+                </div>
+                </section>
+            </div>
 
             {/* Fade-in animation style */}
             <style>{`

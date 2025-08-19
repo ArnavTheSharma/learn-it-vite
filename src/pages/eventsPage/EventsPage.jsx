@@ -83,7 +83,7 @@ function EventsPage() {
             </div>
 
             {/* Description */}
-            <div className="text-gray-700 text-center text-base space-y-2">
+            <div className="text-gray-700 text-center text-lg space-y-2">
                 {Array.isArray(event.content)
                     ? event.content.map((c, i) => <p key={i}>{c}</p>)
                     : <p>{event.content || 'No description available.'}</p>

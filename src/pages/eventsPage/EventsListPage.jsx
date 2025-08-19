@@ -21,7 +21,7 @@ function EventsListPage() {
                 </div>
                 {/* Main Content */}
                 <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left px-4">
-                    <h1 className="text-5xl sm:text-6xl font-serif font-extrabold  mb-4 tracking-tight leading-tight drop-shadow">Events at Learn It</h1>
+                    <h1 className="text-5xl sm:text-5xl font-serif font-extrabold  mb-4 tracking-tight leading-tight drop-shadow">Events at Learn It</h1>
                     <p className="text-xl sm:text-2xl text-blue-900 max-w-2xl mb-8 font-medium leading-relaxed">
                         Discover, connect, and grow with our vibrant community! From hands-on hackathons to inspiring webinars, every event is designed to empower you on your STEM journey.
                     </p>

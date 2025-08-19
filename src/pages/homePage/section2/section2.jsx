@@ -33,7 +33,7 @@
 
       return(
           <>
-          <div className="section2Container bg-white">
+          <div className="section2Container overflow-hidden mb-16 bg-white">
               {/* About Learn It + Mission + Certification*/}
               {/* <TypeAnimation
                   sequence={[
@@ -50,7 +50,7 @@
                   className="title"
                   repeat={Infinity}
               /> */}
-              <h1 className="title text-base sm:text-[3vw] md:text-[2.2vw]">Breaking Barriers, Building Futures</h1>
+              <h2 className="title">Breaking Barriers, Building Futures</h2>
 
               {/* <h2 className="title">Our Story</h2> */}
               <p className="text text-[13px] sm:text-[2.5vw] md:text-[1.7vw] font-medium ">Learn It began as a small passion project from three high school sophomores who wanted to break barriers in STEM education and career-exploration. Now, we have grown to be a 1000-member-plus 501(c)(3) nonprofit with various international platforms!</p>
@@ -89,29 +89,6 @@
                 </div>
               ))}
             </div>
-          </div>
-          <div className="relative lg:hidden visible w-full align-items:stretch justify-center flex flex-wrap gap-4">
-              {/* Common card classes */}
-              {[
-                { icon: <FaHandshake className="text-white text-2xl md:text-3xl" />, key:1, value: partners, label: "NGO Partners", bg: "bg-[#1A2447]" },
-                { icon: <MdVolunteerActivism className="text-white text-2xl md:text-3xl" />, key:2, value: members, label: "Members", bg: "bg-[#c4a77d]" },
-                { icon: <FcConferenceCall className="text-white text-2xl md:text-3xl" />, key:3, value: countries, label: "Countries", bg: "bg-[#1A2447]" },
-              ].map(({ icon, value, label, bg, key }) => (
-                <div
-                  key={key}
-                  className={`${bg} min-w-[130px] max-w-[20vw] w-full sm:w-[30%] p-4 h-fit rounded-md flex flex-col items-center`}
-                >
-                  <div className="flex items-center justify-center gap-2">
-                    {icon}
-                    <div ref={ref}>
-                      <p className="text-white font-bold text-xl md:text-2xl">
-                        {inView ? <CountUp start={0} end={value} duration={2.5} /> : `${value}`}+
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-white font-medium text-sm mt-2">{label}</p>
-                </div>
-              ))}
           </div>
           </>
       );

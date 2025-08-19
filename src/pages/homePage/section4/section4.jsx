@@ -1,4 +1,3 @@
-// import "./section3.css";
 import EventsList from "../../../components/EventsList/EventsList";
 import pastEvents from '../../eventsPage/pastEventsDesc';
 import upcomingEvents from '../../eventsPage/upcomingEventsDesc';
@@ -6,12 +5,12 @@ import UpcomingEventsSlider from '../../../components/UpcomingEventsSlider/Upcom
 import { useNavigate } from "react-router-dom";
 // Dummy data for upcoming events (replace with real data or import)
 
-function Section3() {
+function Section4() {
     const navigate = useNavigate();
     return (
         <div className="w-full flex flex-col gap-8">
             <div className="mb-2 flex flex-col flex-1 items-center">
-                <h2 className="text-3xl pageTitle font-serif font-bold !mt-0 text-rose-600 mb-2 text-center md:text-left">Upcoming Events</h2>
+                <h2 className="text-pretty mb-2 text-center md:text-left">Upcoming Events</h2>
                 <UpcomingEventsSlider events={upcomingEvents} />
                 <button
                     className="cursor-pointer text-sm my-2"
@@ -28,4 +27,4 @@ function Section3() {
     )
 }
 
-export default Section3;
+export default Section4;

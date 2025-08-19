@@ -32,11 +32,11 @@ function Footer() {
                     <div className="flex flex-col items-center md:items-end gap-2">
                         <span className="font-semibold w-full text-white mb-1 text-center">Connect</span>
                         <div className="flex flex-col w-full items-center justify-center gap-4 mb-2">
-                            <a href="https://discord.gg/your-discord-link" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="text-base text-center flex items-center gap-x-2 text-white hover:text-indigo-500 transition"><FaDiscord /> Discord</a>
-                            <a href="https://www.tiktok.com/@your-tiktok" target="_blank" rel="noopener noreferrer" aria-label="Tiktok" className="text-base flex items-center gap-x-2 text-white hover:text-black transition"><FaTiktok /> Tiktok</a>
-                            <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-base flex items-center gap-x-2 text-white hover:text-pink-500 transition"><FaInstagram /> Instagram</a>
-                            <a href="https://www.facebook.com/your-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-base flex items-center gap-x-2 text-white hover:text-blue-600 transition"><FaFacebook /> Facebook</a>
-                            <a href="https://linktr.ee/your-linktree" target="_blank" rel="noopener noreferrer" aria-label="Linktree" className="text-base flex items-center gap-x-2 text-white hover:text-green-500 transition"><FaLink /> Link tree</a>
+                            <a href="https://discord.com/invite/cD9645WNYr" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="text-base text-center flex items-center gap-x-2 text-white hover:text-indigo-500 transition"><FaDiscord /> Discord</a>
+                            <a href="https://www.tiktok.com/@learn.it_academics" target="_blank" rel="noopener noreferrer" aria-label="Tiktok" className="text-base flex items-center gap-x-2 text-white hover:text-black transition"><FaTiktok /> Tiktok</a>
+                            <a href="https://www.instagram.com/learn.it_academics/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-base flex items-center gap-x-2 text-white hover:text-pink-500 transition"><FaInstagram /> Instagram</a>
+                            <a href="https://www.facebook.com/groups/276584458322427/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-base flex items-center gap-x-2 text-white hover:text-blue-600 transition"><FaFacebook /> Facebook</a>
+                            <a href="https://linktr.ee/learnitacademics" target="_blank" rel="noopener noreferrer" aria-label="Linktree" className="text-base flex items-center gap-x-2 text-white hover:text-green-500 transition"><FaLink /> Link tree</a>
                             <a href="mailto:information.learnit@gmail.com" className="text-base flex items-center gap-x-2 text-white hover:text-pink-500 transition"> <CiMail /> Email</a>                         
                         </div>
                     </div>

@@ -17,10 +17,8 @@ function JoinUs() {
             {/* Header Section */}
             <div className="w-[95%] sm:max-w-[90%] mx-auto flex flex-col items-center mb-6">
                 <h1 className="pageTitle font-serif font-bold text-[#003366] text-5xl md:text-6xl text-center mb-4 drop-shadow">Join Us</h1>
-                <h4 className="text-center text-xl text-[#003366] mb-8 max-w-2xl font-medium">
-                    We're recruiting tutors now! Want to add another leadership opportunity to your resume?
-                    Want volunteer hours? Do you excel in a subject at school? Consider sharing wealth and
-                    tutoring students all over the country
+                <h4 className="text-center text-xl text-[#003366] mb-8 max-w-3xl font-medium">
+                    Want to make an impact in your community all while improving that resumé? Consider joining our incredible team of volunteers for certified volunteer hours or apply for any executive board position openings! 
                 </h4>
             </div>
             {/* Application Cards Section */}
@@ -28,7 +26,7 @@ function JoinUs() {
                 <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
                     <FaPeopleGroup className="text-[#003366] text-5xl mb-4" />
                     <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">General Member Application</h5>
-                    <p className="font-light text-gray-700 mb-6 text-center text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</p>
+                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</p>
                     <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setGeneral(true)}>
                         Apply
                     </button>
@@ -36,7 +34,7 @@ function JoinUs() {
                 <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
                     <MdVolunteerActivism className="text-[#003366] text-5xl mb-4" />
                     <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">Volunteer Sign Up</h5>
-                    <p className="font-light text-gray-700 mb-6 text-center text-base">Join our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings!</p>
+                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</p>
                     <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setVolunteer(true)}>
                         More
                     </button>
@@ -44,7 +42,7 @@ function JoinUs() {
                 <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
                     <FaSuitcase className="text-[#003366] text-5xl mb-4" />
                     <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">New Position Openings</h5>
-                    <p className="font-light text-gray-700 mb-6 text-center text-base">Learn It is hiring an International Relations Manager and Social Media Co-Manager to expand global reach and manage content for volunteer hours!</p>
+                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Learn It is hiring a website backend developer, an International Relations Manager and Social Media Co-Manager to expand global reach and manage content for volunteer hours</p>
                     <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setPositions(true)}>
                         More
                     </button>
@@ -73,6 +71,7 @@ function JoinUs() {
                 <div className="overflow-y-auto">
                     <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">New Position Openings</h3>
                     <ul className="list-disc pl-6 text-gray-700 mb-3 text-base">
+                        <li className="mb-2">See something we missed? If you enjoy ReactJS or NodeJS, we’d love your help making this site even better in exchange for volunteer hours! <a href="https://forms.gle/P3TznByR8A5fCkXRA" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
                         <li className="mb-2">International Relations Manager: Learn It is officially opening up a new role, an International Manager. As Learn It continues to grow worldwide, we are looking for a candidate who can start new chapters of Learn It around the world with a team of ambassadors that they will work with, ultimately increasing the total number of members of Learn It. <a href="https://docs.google.com/forms/d/e/1FAIpQLScaN-KBg3d1NcdeD0SaPU14FC1-4xhCBsbb-hSCLXjS2NYS-w/viewform?usp=sf_link" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
                         <li>Social Media Co-Manager: The social media co-manager will have access to our TikTok, Instagram, Facebook, and Youtube accounts and will receive 1 volunteer hour for every 2 posts. This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="https://docs.google.com/forms/d/e/1FAIpQLScfzfA5vRGjasF1_9zzx-qOH_LCMj82ZgDMuBi-Zf-9-4NHOA/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a>
                             <ul className="list-disc pl-6 mt-2">

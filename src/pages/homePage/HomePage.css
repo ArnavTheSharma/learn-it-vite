@@ -26,6 +26,12 @@
     -webkit-text-stroke-color: white;    
 }
 
+section {
+    margin-bottom: 60px;
+    width:95vw;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 /* .backgroundImage {
     z-index:-2;
@@ -78,6 +84,9 @@
     border-radius: 10px;
 } */
 
+.joinUsButton {
+      padding: 15px 20px 15px 20px;
+}
 
 
 @keyframes textclip {
