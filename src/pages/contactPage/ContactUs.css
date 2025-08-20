@@ -49,4 +49,9 @@
         width: 60vw;
         overflow: hidden;
     }    
+
+    .smallText {
+        font-size: clamp(0.65rem,2vw,0.9rem);
+    }
  }
+

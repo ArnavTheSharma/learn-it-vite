@@ -4,8 +4,12 @@ import React, { useRef, useEffect, useState } from "react";
 import partners1 from "./partners1";
 import partners2 from "./partners2";
 import PartnersSlider from "../../components/PartnersSlider/PartnersSlider";
+import emailjs from "@emailjs/browser";
+
+
 
 import Section2 from "./section2/section2";
+import Section4 from "./section4/section4";
 import homeImage from "./learn-it-final-product.gif";
 import Footer from "../../components/Footer/Footer";
 import UpcomingEventsSlider from "../../components/UpcomingEventsSlider/UpcomingEventsSlider";
@@ -32,12 +36,37 @@ import communityAdvocateFeature from "../../companyLogos/communityAdvocateFeatur
 
 import learnItLogo from "../../companyLogos/learn-it-logo.png";
 
+
 function HomePage() {
+    const formRef = useRef();
+    const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
+    const [status, setStatus] = useState("");
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm(
+            "service_dn97rla",
+            "template_pkrpj89",  
+            formRef.current,
+            "lYSSbDcd3b7UFOzF2" 
+        )
+        .then(
+            () => {
+            setStatus("Thanks! Your message was sent.");
+            },
+            (error) => {
+            console.error(error);
+            setStatus("Something went wrong. Please try again.");
+            }
+        );
+    };
+
     const navigate = useNavigate();
     const [showCalendar, setShowCalendar] = useState(false);
 
     // Fade-in on scroll logic with blur/scale
-    const sectionRefs = [useRef(), useRef(), useRef(), useRef(), useRef()];
     const sectionRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
     const [visible, setVisible] = useState([false, false, false, false, false]);
     // For staggered logo animation
@@ -122,7 +151,7 @@ function HomePage() {
             {/* About Learn It, certifications, Mission */}
             <section
                 ref={sectionRefs[1]}
-                className={`sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[1] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                className={`!h-fit sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[1] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <Section2 />
             </section>
@@ -147,7 +176,7 @@ function HomePage() {
                     />
                 </div>
 
-                  <div class=" hidden lg:inline-block h-cover min-h-[1em] w-0.5 self-stretch bg-[#003366]"></div>
+                  <div className=" hidden lg:inline-block h-cover min-h-[1em] w-0.5 self-stretch bg-[#003366]"></div>
 
 
                 {/* Right: Content */}
@@ -225,18 +254,26 @@ function HomePage() {
                         </a>
                     </div>
                     {/* Next event Suggestion Box */}
-                    <div className="bg-[#a1acbfc1] !text-white rounded-lg p-8 flex flex-col w-full items-center relative overflow-hidden min-h-[260px]">
+                    <form ref={formRef} onSubmit={sendEmail} className="bg-[#a1acbfc1] !text-white rounded-lg p-8 flex flex-col w-full items-center relative overflow-hidden min-h-[260px]">
                         <div className="absolute top-0 left-0 w-full h-2 bg-[#1C4168] rounded-t-2xl" />
                         <FaLightbulb className="text-[#003366] text-4xl mb-2 mt-2 drop-shadow" />
                         <h3 className="text-[#003366] text-xl font-bold mb-3 text-center">What are you looking for next?</h3>
                         <p className="text-[#003366] text-base mb-4 text-center">Drop your suggestions for future events below!</p>
                         <textarea
-                            className="w-full bg-white rounded-lg p-3 text-blue-900 mb-3 resize-none border border-[#003366] focus:outline-none focus:ring-1"
+                            name="message"
+                            id="message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            className="!w-[95%] bg-white rounded-lg p-3 text-blue-900 mb-3 resize-none border border-[#003366] focus:outline-none focus:ring-1"
                             rows={3}
                             placeholder="Drop your suggestions..."
+                            required
                         />
+                        {error && <div className="text-red-600 text-sm mb-2">{error}</div>}
+                        {status && <div className="text-green-600 text-sm mb-2">{status}</div>}
+
                         <button className="!text-[#1C4168] !border-[#1C4168] font-bold !px-6 py-3 shadow-lg hover:!bg-[#D9DDE8] transition text-lg mt-auto">Submit</button>
-                    </div>
+                    </form>
                 </div>
             </section>
 
@@ -389,12 +426,12 @@ function HomePage() {
                         </div>
                         </div>
 
-                        <div class=" hidden lg:inline-block h-cover min-h-[1em] w-0.5 self-stretch bg-[#003366]"></div>
+                        <div className=" hidden lg:inline-block h-cover min-h-[1em] w-0.5 self-stretch bg-[#003366]"></div>
         
                         <img 
                             src={learnItLogo} 
                             alt="Learn It Logo" 
-                            className="hidden lg:block"
+                            className="hidden lg:block !max-h-90 !max-w-90 my-auto"
                         />
                 </div>
                 </section>

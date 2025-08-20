@@ -8,7 +8,7 @@ import UpcomingEventsSlider from '../../components/UpcomingEventsSlider/Upcoming
 
 function EventsListPage() {
     return (
-        <div className="EventsListPageContainer sm:max-w-[90%] mx-auto pt-8 text-gray-800">
+        <div className="EventsListPageContainer mx-auto pt-8 text-gray-800">
             {/* Hero/Intro Section - Modern Banner Style */}
             <section className="w-full flex flex-col md:flex-row items-center justify-between gap-10 py-16 mt-16 bg-gradient-to-r from-[#F7E6E8] via-white to-blue-50 border-b-4 border-[#DD6C73] relative overflow-x-clip">
                 {/* Illustration or Accent */}

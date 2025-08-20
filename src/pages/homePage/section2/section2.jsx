@@ -33,7 +33,7 @@
 
       return(
           <>
-          <div className="section2Container overflow-hidden mb-16 bg-white">
+          <div className="section2Container pt-4 mb-16 bg-white">
               {/* About Learn It + Mission + Certification*/}
               {/* <TypeAnimation
                   sequence={[
@@ -81,7 +81,7 @@
                     {icon}
                     <div ref={ref}>
                       <p className="text-white font-bold text-xl md:text-2xl">
-                        {inView ? <CountUp start={0} end={value} duration={2.5} /> : `${value}`}+
+                        {inView ? <CountUp start={0} end={value} duration={3.0} /> : `${value}`}+
                       </p>
                     </div>
                   </div>
