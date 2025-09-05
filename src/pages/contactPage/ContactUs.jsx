@@ -58,7 +58,7 @@ function ContactUs() {
                         name="name"
                         id="name"
                         placeholder="Your Name"
-                        className="bg-[#eaf1fa] !w-full border border-[#b3c6e0] rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#336699] text-[#003366]"
+                        className="bg-[#eaf1fa] !w-full border border-[#b3c6e0] rounded-xl px-4 py-2 !mb-0 focus:outline-none focus:ring-2 focus:ring-[#336699] text-[#003366]"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
@@ -77,7 +77,7 @@ function ContactUs() {
                         name="message"
                         id="message"
                         placeholder="Your Message"
-                        className="bg-[#eaf1fa] !w-full border border-[#b3c6e0] rounded-xl px-4 py-2 min-h-[100px] focus:outline-none focus:ring-2 focus:ring-[#336699] text-[#003366]"
+                        className="bg-[#eaf1fa] !w-full border border-[#b3c6e0] rounded-xl px-4 py-2 min-h-[150px] focus:outline-none focus:ring-2 focus:ring-[#336699] text-[#003366]"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         required
@@ -117,7 +117,7 @@ function ContactUs() {
                                 {showFounders ? <MdKeyboardArrowUp className='text-xl' /> : <MdKeyboardArrowDown className='text-xl' />}
                             </button>
                             {showFounders && (
-                                <div className="mt-3 flex flex-col gap-1 animate-fade-in">
+                                <div className="mt-3 !px-3 flex flex-col gap-1 animate-fade-in">
                                     <a href="mailto:piyusha.majgaonkar@gmail.com" className="smallText infoText text-[#003366] underline hover:text-[#336699]">piyusha.majgaonkar@gmail.com</a>
                                     <a href="mailto:sunainapal2006@gmail.com" className="smallText infoText text-[#003366] underline hover:text-[#336699]">sunainapal2006@gmail.com</a>
                                     <a href="mailto:itsaryandas15@gmail.com" className="smallText infoText text-[#003366] underline hover:text-[#336699]">itsaryandas15@gmail.com</a>
@@ -126,15 +126,50 @@ function ContactUs() {
                         </div>
                         {/* Social Media Manager Dropdown */}
                         <div className='bg-white rounded-xl p-4 relative shadow-sm'>
-                            <a href="mailto:mariahboyce3@gmail.com"><button type="button" className="w-full cursor-pointer flex items-center justify-between text-base font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1" onClick={() => setShowSMM((v) => !v)}>
-                                <span className="smallText flex items-center  text-sm gap-x-1">Email <CgMail />Social Media Manager</span>
-                            </button></a>
+                        <button
+                            type="button"
+                            className="w-full cursor-pointer flex items-center justify-between text-base font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1"
+                            onClick={() => setShowSMM((v) => !v)}
+                        >
+                            <span className="smallText flex items-center text-sm gap-x-1">
+                            Email <CgMail /> Social Media Manager
+                            </span>
+                            {showSMM ? <MdKeyboardArrowUp className="text-xl" /> : <MdKeyboardArrowDown className="text-xl" />}
+                        </button>
+                        {showSMM && (
+                            <div className="mt-3 !px-3 flex flex-col gap-1 animate-fade-in">
+                            <a
+                                href="mailto:mariahboyce3@gmail.com"
+                                className="smallText infoText text-[#003366] underline hover:text-[#336699]"
+                            >
+                                mariahboyce3@gmail.com
+                            </a>
+                            </div>
+                        )}
                         </div>
+
                         {/* Communications Coordinator Dropdown */}
                         <div className='bg-white rounded-xl p-4 relative shadow-sm'>
-                            <a href="mailto:meravsriram@gmail.com"><button type="button" className="w-full  flex items-center justify-between !text-sm font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1" onClick={() => setShowComCo((v) => !v)}>
-                                <span className="smallText flex items-center gap-x-1">Email<CgMail />Communications Coordinator</span>
-                            </button></a>
+                        <button
+                            type="button"
+                            className="w-full cursor-pointer flex items-center justify-between text-base font-bold text-[#003366] focus:outline-none transition-colors hover:bg-[#eaf1fa] rounded-lg px-2 py-1"
+                            onClick={() => setShowComCo((v) => !v)}
+                        >
+                            <span className="smallText flex items-center text-sm gap-x-1">
+                            Email <CgMail /> Communications Coordinator
+                            </span>
+                            {showComCo ? <MdKeyboardArrowUp className="text-xl" /> : <MdKeyboardArrowDown className="text-xl" />}
+                        </button>
+                        {showComCo && (
+                            <div className="mt-3 !px-3 flex flex-col gap-1 animate-fade-in">
+                            <a
+                                href="mailto:meravsriram@gmail.com"
+                                className="smallText infoText text-[#003366] underline hover:text-[#336699]"
+                            >
+                                meravsriram@gmail.com
+                            </a>
+                            </div>
+                        )}
                         </div>
                     </div>
                 </div>

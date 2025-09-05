@@ -25,8 +25,8 @@ function JoinUs() {
             <div className="w-[95%] sm:max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
                 <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
                     <FaPeopleGroup className="text-[#003366] text-5xl mb-4" />
-                    <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">General Member Application</h5>
-                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</p>
+                    <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">General Member Form</h5>
+                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Fill out this form once to become a member and unlock access to our webinars, volunteer opportunities, and resources</p>
                     <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setGeneral(true)}>
                         Apply
                     </button>
@@ -34,7 +34,7 @@ function JoinUs() {
                 <div className="flex flex-col items-center bg-white rounded-3xl shadow p-10 border-2 border-[#336699] hover:shadow-lg transition-all duration-200">
                     <MdVolunteerActivism className="text-[#003366] text-5xl mb-4" />
                     <h5 className="text-2xl font-bold text-[#003366] mb-2 text-center tracking-tight">Volunteer Sign Up</h5>
-                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements!</p>
+                    <p className="font-light text-gray-700 mb-6 text-center text-pretty text-base">Volunteer with Learn It to give back to your community and earn certified hours for NHS or other service requirements</p>
                     <button type="button" className="rounded-full font-semibold bg-[#003366] text-white text-base px-8 py-2 mt-auto hover:bg-[#002244] transition-colors shadow" onClick={() => setVolunteer(true)}>
                         More
                     </button>
@@ -60,7 +60,6 @@ function JoinUs() {
                     <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">Volunteer Sign Up</h3>
                     <ul className="list-disc pl-6 text-gray-700 mb-3 text-base">
                         <li className="mb-2">Want to make an impact in your community and improve your resumé? Join our incredible team of volunteers (and get certified volunteer hours!) or apply for any executive board position openings! <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Volunteer Sign Up Form</a></li>
-                        <li>As Learn It is now certified, the volunteer hours you gain by contributing to our organization will have even more merit! There are various volunteer opportunities with different levels of commitment so you can choose one that is right for you. These hours will help you as you prepare to apply for NHS, or if you are already in NHS or another community service organization, these hours will count towards that as well. Please forward this form to anyone you may know who is in need of volunteer hours and do not hesitate to reach out with any questions, concerns, or feedback!</li>
                     </ul>
                     <div className="flex justify-center mt-4">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpXgiOqyChZjeGbwQFzV4z08Qyn-r9kAKj8pWbEvkaqAvZ6g/viewform" target="_blank" className="bg-[#003366] text-white font-bold rounded-full px-7 py-2 shadow hover:bg-[#002244] transition text-base">Sign Up</a>
@@ -71,17 +70,9 @@ function JoinUs() {
                 <div className="overflow-y-auto">
                     <h3 className="text-2xl font-bold text-[#003366] mb-3 text-center">New Position Openings</h3>
                     <ul className="list-disc pl-6 text-gray-700 mb-3 text-base">
-                        <li className="mb-2">See something we missed? If you enjoy ReactJS or NodeJS, we’d love your help making this site even better in exchange for volunteer hours! <a href="https://forms.gle/P3TznByR8A5fCkXRA" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
+                        <li className="mb-2">See something we missed? If you enjoy ReactJS or NodeJS, we’d love your help making this site even better in exchange for volunteer hours! <a href="https://forms.gle/SgTgR6mwi97PKN3RA" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
                         <li className="mb-2">International Relations Manager: Learn It is officially opening up a new role, an International Manager. As Learn It continues to grow worldwide, we are looking for a candidate who can start new chapters of Learn It around the world with a team of ambassadors that they will work with, ultimately increasing the total number of members of Learn It. <a href="https://docs.google.com/forms/d/e/1FAIpQLScaN-KBg3d1NcdeD0SaPU14FC1-4xhCBsbb-hSCLXjS2NYS-w/viewform?usp=sf_link" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
-                        <li>Social Media Co-Manager: The social media co-manager will have access to our TikTok, Instagram, Facebook, and Youtube accounts and will receive 1 volunteer hour for every 2 posts. This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="https://docs.google.com/forms/d/e/1FAIpQLScfzfA5vRGjasF1_9zzx-qOH_LCMj82ZgDMuBi-Zf-9-4NHOA/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a>
-                            <ul className="list-disc pl-6 mt-2">
-                                <li>Dedicating at least 2-4 hrs/week to the role.</li>
-                                <li>Being able to post/publish 3-4 times on TikTok every week.</li>
-                                <li>Collaborating with Mariah Boyce, who would be your social media co-manager.</li>
-                                <li>Communicating with the founders about availability for Executive Committee meetings.</li>
-                                <li>Creating creative, entertaining, and respectful posts/content.</li>
-                            </ul>
-                        </li>
+                        <li>Social Media Co-Manager: The social media co-manager will have access to our TikTok, Instagram, Facebook, and Youtube accounts and will receive 1 volunteer hour for every 2 posts. This also serves as a great leadership role as Learn It is continuing to expand globally. <a href="https://docs.google.com/forms/d/e/1FAIpQLScfzfA5vRGjasF1_9zzx-qOH_LCMj82ZgDMuBi-Zf-9-4NHOA/viewform" target="_blank" className="text-[#003366] underline hover:text-[#336699] font-semibold">Apply</a></li>
                     </ul>
                 </div>
             </Modal>

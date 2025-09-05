@@ -3,15 +3,29 @@ import { getAuth, signOut } from 'firebase/auth';
 import './NavBar.css';
 import logo from "../../companyLogos/learn-it-icon-transparent.png";
 import useUser from "../../hooks/useUser";
+import {React, useState} from "react";
 
 function NavBar() {
     const { user } = useUser();
     const navigate = useNavigate();
     const location = useLocation();
     const isActive = (path) => location.pathname === path;
+    const [greyBgVisibility, setGreyBgVisibility] = useState(true);
+
+    const dropdownReveal = () => {
+        document.getElementById("hamburger-icon").classList.toggle("change");
+        document.getElementById("dropdown-container").classList.toggle("reveal-dropdown");
+        setGreyBgVisibility(!greyBgVisibility);
+        document.getElementById("greyBg").hidden = greyBgVisibility;
+    }
+
+    
 
     return (
-        <div className="navbar absolute w-full top-0 z-90">
+
+        <div className="navbar absolute w-full top-0 z-10">
+            <div id="greyBg" className="w-screen h-screen bg-gray-700 opacity-50 fixed !z-20" hidden={greyBgVisibility} onClick={dropdownReveal}></div>
+            
             <nav className="mx-auto" >
                 <div><Link to="/"><img className="logo object-center" src={logo} alt="Learn It Logo" /></Link></div>
                 <li><Link to="/" className={isActive("/") ? "!text-[#dd6c74] !font-bold" : " !transition-colors"}>Home</Link></li>
@@ -36,7 +50,9 @@ function NavBar() {
                 </div>
             </nav>
 
-            <div id="dropdown-container" className="dropdown-container md:hidden !py-3">
+
+
+            <div id="dropdown-container" className="dropdown-container md:hidden !py-3 z-30">
                 <Link className={`dropdown-option ${isActive("/") ? "!underline !font-bold" : "!font-bold"}`} to="/" onClick={dropdownReveal}>Home</Link>
                 <Link className={`dropdown-option ${isActive("/events") ? "!underline !font-bold" : "!font-bold"}`} to="/events" onClick={dropdownReveal}>Events</Link>
                 <Link className={`dropdown-option ${isActive("/join-us") ? "!underline !font-bold" : "!font-bold"}`} to="/join-us" onClick={dropdownReveal}>Join Us</Link>
@@ -47,9 +63,6 @@ function NavBar() {
     );
 }
 
-function dropdownReveal() {
-    document.getElementById("hamburger-icon").classList.toggle("change");
-    document.getElementById("dropdown-container").classList.toggle("reveal-dropdown");
-}
+
 
 export default NavBar;

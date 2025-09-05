@@ -23,7 +23,7 @@ const EventsList = ({ events }) => {
                         )}
                     </div>
                     <div className="flex-1 flex flex-col p-5">
-                        <h2 className="text-xl font-bold text-rose-600 mb-2 group-hover:text-rose-700 transition">{event.title}</h2>
+                        <h2 className="!text-xl font-bold text-rose-600 mb-2 group-hover:text-rose-700 transition">{event.title}</h2>
                         <p className="text-gray-600 text-sm mb-4 flex-1">
                             {event.content[0].substring(0, 120)}{event.content[0].length > 120 ? '...' : ''}
                         </p>

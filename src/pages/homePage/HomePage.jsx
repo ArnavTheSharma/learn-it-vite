@@ -30,13 +30,14 @@ import nordVPNLogo from "../../companyLogos/hackathonSponsorLogos/nordVPNLogo.pn
 import onePasswordLogo from "../../companyLogos/hackathonSponsorLogos/onePasswordLogo.jpg";
 import wolframLogo from "../../companyLogos/hackathonSponsorLogos/wolframLogo.jpg";
 import xyzLogo from "../../companyLogos/hackathonSponsorLogos/xyzLogo.png";
+import hackathon from "../eventsPage/eventImages/pastEvents/hackathon.png";
+
 
 import communityAdvocateLogo from "../../companyLogos/communityAdvocateLogo.png";
 import communityAdvocateFeature from "../../companyLogos/communityAdvocateFeature.png";
 
 import learnItLogo from "../../companyLogos/learn-it-logo.png";
 
-import hackathon from "../eventsPage/eventImages/pastEvents/hackathon.png";
 
 
 function HomePage() {
@@ -69,11 +70,11 @@ function HomePage() {
     const [showCalendar, setShowCalendar] = useState(false);
 
     // Fade-in on scroll logic with blur/scale
-    const sectionRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
-    const [visible, setVisible] = useState([false, false, false, false, false]);
+    const sectionRefs = [useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef(), useRef()];
+    const [visible, setVisible] = useState([false, false, false, false, false, false, false, false]);
     // For staggered logo animation
-    const logoRefs = Array.from({ length: 6 }, () => useRef());
-    const [logoVisible, setLogoVisible] = useState(Array(6).fill(false));
+    const logoRefs = Array.from({ length: 8 }, () => useRef());
+    const [logoVisible, setLogoVisible] = useState(Array(8).fill(false));
 
     useEffect(() => {
         // Section fade+blur+rise
@@ -158,11 +159,64 @@ function HomePage() {
                 <Section2 />
             </section>
 
+<section
+  ref={sectionRefs[2]}
+className={`!h-fit sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[2] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+
+>
+  <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-8">
+    
+    {/* Heading */}    
+    <h2 className="text-3xl font-extrabold text-[#003366] tracking-tight">
+      About Us
+    </h2>
+
+    {/* Intro Paragraph */}
+    <p className="text-base sm:text-lg text-[#003366] leading-relaxed max-w-3xl">
+    Here at <span className="font-bold text-[#dd6c74]">Learn It</span>, we believe 
+    education should be <span className="italic">accessible</span>, engaging, and rewarding 
+    for every student. That’s why we provide <span className="font-medium text-[#004c99]">
+    free college prep tools</span>, career exploration resources, tutoring, webinars, 
+    and hands-on volunteer opportunities.
+    </p>
+
+
+    {/* Mission Card Grid */}
+    <div className="grid sm:grid-cols-2 gap-6 mt-6 w-full">
+      <div className="bg-white rounded-2xl shadow-sm border border-[#b3c6e0] p-8">
+        <h3 className="font-bold text-[#003366] text-xl mb-3">Our Impact</h3>
+        <p className="text-sm sm:text-base text-[#003366] leading-relaxed mb-4">
+            We strive to break barriers in education by offering free tutoring, extracurricular learning, and STEM resources that prepare students for college and future careers, while fostering a lifelong love for learning        
+        </p>
+        <button
+          onClick={() => { navigate('/events'); }}
+          className="inline-block rounded-full font-bold bg-[#003366] text-white px-6 py-2 hover:bg-[#002244] transition-colors shadow self-center"
+        >
+          Our Past Events
+        </button>
+
+      </div>
+      <div className="bg-white rounded-2xl shadow-sm border border-[#b3c6e0] p-8 flex flex-col justify-center">
+        <h3 className="font-bold text-[#003366] text-xl mb-3">Get Involved</h3>
+        <p className="text-sm sm:text-base text-[#003366] leading-relaxed mb-4">
+            Whether you’re looking to volunteer, grow your leadership skills, or access resources that support your future, Learn It is here for you. Together, we’re building futures powered by knowledge and community.
+        </p>
+        <button
+          onClick={() => { navigate('/join-us'); }}
+          className="inline-block rounded-full font-bold bg-[#003366] text-white px-6 py-2 hover:bg-[#002244] transition-colors shadow self-center"
+        >
+          Sign Up Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
             <section
-            ref={sectionRefs[2]}
-            className={`bg-white transition-all duration-700 ${visible[2] ? "opacity-100 translate-y-0 blur-0 scale-100" : "opacity-0 translate-y-8 blur-md scale-95" }`}
+            ref={sectionRefs[3]}
+            className={`bg-white transition-all duration-700 ${visible[3] ? "opacity-100 translate-y-0 blur-0 scale-100" : "opacity-0 translate-y-8 blur-md scale-95" }`}
             >
                 <h2 className="text-[#003366] mb-6 ">
                     Featured in the Community Advocate
@@ -228,16 +282,16 @@ function HomePage() {
 
             {/* Preview of Past Events and any Upcoming Events */}
             <section
-                ref={sectionRefs[3]}
-                className={`sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[2] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                ref={sectionRefs[4]}
+                className={`sm:w-full sm:max-w-[90%] mx-auto mb-12 transition-all duration-700 ${visible[4] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <Section4 />
             </section>
 
             {/* Question Boxes Section */}
             <section
-                ref={sectionRefs[4]}
-                className={`!w-[80vw] md:!w-[90vw] lg:max-w-[80%] mx-auto mb-12 flex flex-col gap-8 transition-all duration-700 ${visible[3] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                ref={sectionRefs[5]}
+                className={`!w-[80vw] md:!w-[90vw] lg:max-w-[80%] mx-auto mb-12 flex flex-col gap-8 transition-all duration-700 ${visible[5] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Webinar Feedback Box */}
@@ -281,8 +335,8 @@ function HomePage() {
 
             {/* Featured Event: Hackathon Section - Redesigned */}
             <div
-                ref={sectionRefs[5]}
-                className={`bg-white transition-all duration-700 ${visible[5] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                ref={sectionRefs[6]}
+                className={`bg-white transition-all duration-700 ${visible[6] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <section className="w-[95vw] sm:w-full sm:max-w-[90%] mx-auto flex flex-col items-center">
                     <div className="bg-white rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row border border-[#003366] overflow-hidden">
@@ -386,8 +440,8 @@ function HomePage() {
 
             {/* Colleges & Companies Section - Enhanced */}
             <div
-                ref={sectionRefs[6]}
-                className={`bg-white transition-all duration-700 ${visible[6] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
+                ref={sectionRefs[7]}
+                className={`bg-white transition-all duration-700 ${visible[7] ? 'opacity-100 translate-y-0 blur-0 scale-100' : 'opacity-0 translate-y-8 blur-md scale-95'}`}
             >
                 <section className="w-[95vw] sm:w-full sm:max-w-[90%] mx-auto mb-20 flex flex-col items-center">
                     <h2 className="!text-[#003366] font-serif font-bold !mt-0 mb-2 text-center tracking-tight">Our Partners in Impact</h2>
@@ -413,18 +467,18 @@ function HomePage() {
                             teams, you’ll be part of something bigger—making STEM accessible for every learner.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 mt-5">
-                            <a
-                            href="/contact-us"
+                            <button
+                            onClick={() => { navigate('/contact-us'); }}
                             className="inline-block bg-[#DD6C73] text-white font-bold rounded-lg px-7 py-3 shadow hover:bg-rose-600 transition text-lg"
                             >
                             Partner with Us
-                            </a>
-                            <a
-                            href="/our-team"
+                            </button>
+                            <button
+                            onClick={() => { navigate('/our-team'); }}
                             className="inline-block bg-[#003366] text-white font-bold rounded-lg px-7 py-3 shadow hover:bg-[#002244] transition text-lg"
                             >
                             Meet the Team
-                            </a>
+                            </button>
                         </div>
                         </div>
 
