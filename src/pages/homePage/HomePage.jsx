@@ -36,6 +36,8 @@ import communityAdvocateFeature from "../../companyLogos/communityAdvocateFeatur
 
 import learnItLogo from "../../companyLogos/learn-it-logo.png";
 
+import hackathon from "../eventsPage/eventImages/pastEvents/hackathon.png";
+
 
 function HomePage() {
     const formRef = useRef();
@@ -286,7 +288,7 @@ function HomePage() {
                     <div className="bg-white rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row border border-[#003366] overflow-hidden">
                         {/* Left: Event Image */}
                         <div className="md:w-1/2 w-full flex items-center justify-center bg-[#003366] p-0 md:p-8">
-                            <img src="/src/pages/eventsPage/eventImages/pastEvents/hackathon.png" alt="Hackathon" className="rounded-2xl shadow-lg w-full max-w-xs object-cover border border-blue-200 m-6" />
+                            <img src={hackathon} alt="Hackathon" className="rounded-2xl shadow-lg w-full max-w-xs object-cover border border-blue-200 m-6" />
                         </div>
                         {/* Right: Event Info */}
                         <div className="md:w-1/2 w-full flex flex-col justify-center p-8">
