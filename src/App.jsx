@@ -1,6 +1,6 @@
 import './App.css';
 import './index.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/Navbar/NavBar';
 import ContactUs from './pages/contactPage/ContactUs';
 import EventsPage from './pages/eventsPage/EventsPage';
@@ -15,7 +15,7 @@ import Footer from './components/Footer/Footer';
  
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div id="page-body" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         <NavBar />
         <div style={{ flex: 1 }}>
@@ -33,7 +33,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
