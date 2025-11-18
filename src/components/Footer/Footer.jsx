@@ -10,13 +10,10 @@ function Footer() {
             <div className="sm:max-w-[90%] mx-auto w-full  border-rose-200 mt-12">
                 <div className="w-full px-4 py-10 sm:py-12 grid grid-cols-2 sm:grid-cols-3 sm:gap-8 text-center md:text-left">
                     {/* Brand & Copyright */}
-                    <div className="flex flex-col items-center md:items-start gap-2">
-                        <Link to="/">
-                        <div><img className="logo sm:!h-24" src={logo}></img></div>
-                        <h2 className="text-2xl font-bold !text-rose-500 tracking-wide mb-1">Learn It</h2>
-                        </Link>
-                        
-                    </div>
+                    <Link to="/" className="flex flex-col items-center md:items-start width-fit gap-2">
+                        <img className="logo sm:!h-24" src={logo}></img>
+                        <div className="text-4xl font-bold !text-rose-500 tracking-wide width-full mb-1">Learn It</div>
+                    </Link>
 
                     {/* Navigation Links */}
                     <div className="hidden sm:flex flex-col gap-2 items-center">
