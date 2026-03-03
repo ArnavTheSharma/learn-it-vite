@@ -8,6 +8,7 @@ import impellingo_scholarships_7_21 from "./eventImages/pastEvents/impellingo_sc
 import khia_thomas_9_2 from "./eventImages/pastEvents/khia_thomas_9_2.png";
 import learn_it_falls_hack from "./eventImages/pastEvents/learn_it_falls_hack.png"
 import phillip_sarpong_8_1 from "./eventImages/pastEvents/phillip_sarpong_8_1.png";
+import rafael_martinez_perez_1_25 from "./eventImages/pastEvents/rafael_martinez_perez_1_25.jpg";
 import robin_eurgubian_7_13 from "./eventImages/pastEvents/robin_eurgubian_7_13.png";
 import sairy_cohen_9_9 from "./eventImages/pastEvents/sairy_cohen_9_9.png";
 import sophie_smith_8_6 from "./eventImages/pastEvents/sophie_smith_8_6.png";
@@ -24,6 +25,14 @@ const pastEvents = [
         content2: ["Participants in Learn It’s Hackathon are encouraged to focus their efforts on making sustainability accessible to everyone. We believe that technology has the potential to revolutionize the way we approach global health issues and we welcome fresh ideas and creative solutions."],
         image: learn_it_falls_hack,
         resources: "https://learn-it-fall-hacks.devpost.com/",
+    },
+
+    {
+        name: 'rafael_martinez_perez_1_25',
+        title: ' College App Ready: STEM-Focused Strategies - Rafael Martinez-Perez, MD, PhD',
+        content: ["Interested in a career in medicine? 🧠✨ Join our FREE webinar featuring Dr. Rafael Martinez-Perez, who shares his journey to becoming a skull base neurosurgeon and what inspires his life-changing work!"],
+        image: rafael_martinez_perez_1_25,
+        recording: "https://drive.google.com/file/d/1ZNtsDcQtWvMNXTzfyNFY6Zjoo12UQ_GD/view?usp=sharing",
     },
 
     {

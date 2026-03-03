@@ -10,12 +10,15 @@ import NotFoundPage from './pages/NotFoundPage';
 import TeamPage from './pages/teamPage/TeamPage';
 import EventsListPage from './pages/eventsPage/EventsListPage';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from "./components/ScrollToTop";
 // import LoginPage from './pages/LoginPage';
 // import CreateAccountPage from './pages/CreateAccountPage';
  
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <div id="page-body" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         <NavBar />
         <div style={{ flex: 1 }}>
