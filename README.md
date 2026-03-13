@@ -1,12 +1,30 @@
-# React + Vite
+# Learn It Global | Official Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The official web platform for **Learn It**, a 501(c)(3) certified non-profit organization dedicated to bridging the STEM education accessibility gap. This repository houses a modern, high-performance interface designed to connect high school students with free educational resources, webinars, and career exploration.
 
-Currently, two official plugins are available:
+[**🌐 learnitglobal.org**](https://learnitglobal.org)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Our Mission
+Our organization was founded to solve a central issue: the disconnect between high school students and their vision for the future. Whether it’s college prep or career exploration, we provide the resources students need to succeed, free of charge.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technical Stack
+* **Core:** [React](https://react.dev/) (Functional Components & Hooks)
+* **Build Tool:** [Vite](https://vitejs.dev/) for optimized asset loading and fast HMR.
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) for a mobile-first, responsive design system.
+* **Deployment:** CI/CD via [GitHub Actions](https://github.com/ArnavTheSharma/learn-it-vite/actions) for seamless production updates.
+
+## 🌟 Key Features
+* **Dynamic Event Management:** A central hub for our global webinars and college prep sessions.
+* **Volunteer Integration:** Dedicated UI for onboarding student volunteers and community members.
+* **Resource Library:** (In-Development) A repository of STEM and career-exploration content.
+* **Global Scalability:** Architected to support our expanding international initiatives.
+
+## 🚀 Development Setup
+
+### 1. Installation
+```bash
+git clone [https://github.com/ArnavTheSharma/learn-it-vite.git](https://github.com/ArnavTheSharma/learn-it-vite.git)
+cd learn-it-vite
+npm install
