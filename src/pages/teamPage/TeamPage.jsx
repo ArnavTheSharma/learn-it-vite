@@ -23,7 +23,7 @@ const teamMembers = [
         role: 'Co-President',
         img: Avi,
         description: 'Hi! My name is Avi Singh and I’m the current Co-President of Learn It. I’m a senior at Westborough High School. I aspire to major in biology in college with a pre-dental track. In my free time, I’m a part of my high school’s varsity soccer and outdoor track teams. I’m also a Co-Founder and Co-President of the philanthropy club at my high school, a member of HOSA, my high school’s StuCo vice president and NHS secretary, and part of my town’s youth commission. I joined LearnIt in order to assist students with career paths and college applications as I know it can be a very nerve-racking experience, and I noticed there aren’t many free resources for students to gain access to such information.',
-        category: 'Leadership',
+        category: 'Presidents',
     },
     {
         name: 'Kush Sinha',
@@ -31,7 +31,7 @@ const teamMembers = [
         role: 'Co-President',
         img: Kush,
         description: 'Hi, my name is Kush Sinha and I’m a Co-President of Learn It. Currently, I am a senior at Westborough High School where I lead/take part in many STEM-oriented clubs and activities. I’m passionate about computer engineering and like to code in my free time. I also enjoy playing basketball, reading, and going to the gym. I joined Learn It because it gives me an opportunity to help others that are concerned about their future, much like how I used to be. I hope to make a real difference through this institution.',
-        category: 'Leadership',
+        category: 'Presidents',
     },
     {
         name: 'Sanaaya Desai',
@@ -39,7 +39,7 @@ const teamMembers = [
         role: 'Co-President',
         img: Sanaaya,
         description: 'Hi! My name is Sanaaya Desai and I’m the Co-President of LearnIt Global for this year. I am also a senior in high school and want to go into the business world. Outside of the classroom, I’m involved in many different activities, including Indian classical singing, Bollywood dance, and track. Furthermore, I do leadership work in the form of camp counselor and the president of Soal Corale at school. I joined Learn It to help people who need assistance with college applications as well as career paths. This part of high school can be very difficult, and I want to help kids by making it less stressful.',
-        category: 'Leadership',
+        category: 'Presidents',
     },
     {
         name: 'Stuti Patil',
@@ -47,7 +47,7 @@ const teamMembers = [
         role: 'Co-Vice President',
         img: Stuti,
         description: 'Hi, I’m Stuti Patil, the 26-27 Co-Vice President of LearnIt and a junior at Westborough High School with a strong interest in pursuing neuroscience in college. At school, I am actively involved in Student Council, Science Olympiad, Chamber Singers, and varsity tennis. Through these experiences, I have developed a passion for leadership, teamwork, and helping others. I joined LearnIt because I understand how challenging it can be for students to explore different career paths and make decisions about their futures. My goal is to help provide students with accessible guidance and resources so they can feel more confident and informed when choosing their academic and career paths.',
-        category: 'Leadership',
+        category: 'Vice Presidents',
     },
     {
         name: 'Ayan Kataria',
@@ -55,7 +55,7 @@ const teamMembers = [
         role: 'Co-Vice President',
         img: Ayan,
         description: 'Hi! I’m Ayan Kataria, the 26-27 Co-Vice President of LearnIt. I am a junior at Westborough High School passionate about pursuing a biology or psychology major in college. At school, I am a founder of Westborough’s Red Cross Chapter, the event overseer on the executive board of Student Council, a part of Chamber Singers, and play multiple sports. After seeing many of my friends struggle with picking college majors, I decided to join LearnIt to help others with the difficulties in deciding which career to pursue. Therefore, my goal is to have a widespread impact that allows teens nationwide to be resolute in their decisions about their future.',
-        category: 'Leadership',
+        category: 'Vice Presidents',
     },
     {
         name: 'Daniel Zhang',
@@ -117,7 +117,8 @@ const teamMembers = [
 ];
 
 const categories = [
-    { name: "Leadership", heading: "Leadership Team" },
+    { name: "Presidents", heading: "Presidents" },
+    { name: "Vice Presidents", heading: "Vice Presidents" },
     { name: "Technology", heading: "Technology Team" },
     { name: "Outreach", heading: "Outreach Team" },
     { name: "Media", heading: "Media Team" },
