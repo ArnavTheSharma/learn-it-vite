@@ -2,34 +2,62 @@ import React from 'react';
 import "../../App.css";
 import "./TeamPage.css";
 
+import Arnav from "./teamImages/arnavImage.jpg";
 import Avi from "./teamImages/aviImage.png";
+import Ayan from "./teamImages/ayanImage.jpeg";
 import Daniel from "./teamImages/danielImage.jpeg";
 import Himal from "./teamImages/himalImage.png";
 import Kush from "./teamImages/kushImage.png";
 import Merav from "./teamImages/meravImage.jpeg";
 import Owen from "./teamImages/owenImage.jpeg";
+import Sanaaya from "./teamImages/sanaayaImage.jpeg";
 import Shreya from "./teamImages/shreyaImage.png";
 import Sid from "./teamImages/sidImage.jpeg";
+import Stuti from "./teamImages/stutiImage.jpeg";
 import Placeholder from "./teamImages/placeholderImage.png";
 
 const teamMembers = [
     {
-        name: 'Himal Bokka',
-        email: 'himalkumar2020@gmail.com',
+        name: 'Avi Singh',
+        email: 'avisingh5876@gmail.com',
         role: 'Co-President',
-        img: Himal,
-        description: 'Hi, I’m Himal Bokka, the Co-President of Learn It and a student at Carmel High School. I’m passionate about expanding STEM and career education opportunities and want to have a lasting impact through this organization. At school, I’m involved in HOSA, track and field, and other medical-related activities. I enjoy collaborating with others to bring new ideas and initiatives to bigger causes. My goal is to grow Learn It into a global platform that provides meaningful and accessible opportunities for all students.',
+        img: Avi,
+        description: 'Hi! My name is Avi Singh and I’m the current Co-President of Learn It. I’m a senior at Westborough High School. I aspire to major in biology in college with a pre-dental track. In my free time, I’m a part of my high school’s varsity soccer and outdoor track teams. I’m also a Co-Founder and Co-President of the philanthropy club at my high school, a member of HOSA, my high school’s StuCo vice president and NHS secretary, and part of my town’s youth commission. I joined LearnIt in order to assist students with career paths and college applications as I know it can be a very nerve-racking experience, and I noticed there aren’t many free resources for students to gain access to such information.',
         category: 'Leadership',
     },
     {
-        name: 'Merav Sriram',
-        email: 'meravsriram@gmail.com',
+        name: 'Kush Sinha',
+        email: 'kushsinha8119@gmail.com',
         role: 'Co-President',
-        img: Merav,
-        description: 'Merav Sriram is the current Co-President of Learn It, where he is dedicated to expanding access to educational resources worldwide. At Westborough High School, he serves as President of both the DECA Chapter and the Entrepreneurship Club, leading peers in business, innovation, and leadership. Beyond academics, Merav plays Varsity Soccer and enjoys staying active through sports. In his free time, he loves listening to music, which fuels his creativity and focus. Passionate about making a lasting difference, Merav sees Learn It as the perfect platform to scale his mission globally—where LearnIt\'s efforts and impact are already gaining international recognition.',
+        img: Kush,
+        description: 'Hi, my name is Kush Sinha and I’m a Co-President of Learn It. Currently, I am a senior at Westborough High School where I lead/take part in many STEM-oriented clubs and activities. I’m passionate about computer engineering and like to code in my free time. I also enjoy playing basketball, reading, and going to the gym. I joined Learn It because it gives me an opportunity to help others that are concerned about their future, much like how I used to be. I hope to make a real difference through this institution.',
         category: 'Leadership',
     },
-    {   
+    {
+        name: 'Sanaaya Desai',
+        email: 'sanaayades25@gmail.com',
+        role: 'Co-President',
+        img: Sanaaya,
+        description: 'Hi! My name is Sanaaya Desai and I’m the Co-President of LearnIt Global for this year. I am also a senior in high school and want to go into the business world. Outside of the classroom, I’m involved in many different activities, including Indian classical singing, Bollywood dance, and track. Furthermore, I do leadership work in the form of camp counselor and the president of Soal Corale at school. I joined Learn It to help people who need assistance with college applications as well as career paths. This part of high school can be very difficult, and I want to help kids by making it less stressful.',
+        category: 'Leadership',
+    },
+    {
+        name: 'Stuti Patil',
+        email: 'stutipatilwest@gmail.com',
+        role: 'Co-Vice President',
+        img: Stuti,
+        description: 'Hi, I’m Stuti Patil, the 26-27 Co-Vice President of LearnIt and a junior at Westborough High School with a strong interest in pursuing neuroscience in college. At school, I am actively involved in Student Council, Science Olympiad, Chamber Singers, and varsity tennis. Through these experiences, I have developed a passion for leadership, teamwork, and helping others. I joined LearnIt because I understand how challenging it can be for students to explore different career paths and make decisions about their futures. My goal is to help provide students with accessible guidance and resources so they can feel more confident and informed when choosing their academic and career paths.',
+        category: 'Leadership',
+    },
+    {
+        name: 'Ayan Kataria',
+        email: 'ayankataria15@gmail.com',
+        role: 'Co-Vice President',
+        img: Ayan,
+        description: 'Hi! I’m Ayan Kataria, the 26-27 Co-Vice President of LearnIt. I am a junior at Westborough High School passionate about pursuing a biology or psychology major in college. At school, I am a founder of Westborough’s Red Cross Chapter, the event overseer on the executive board of Student Council, a part of Chamber Singers, and play multiple sports. After seeing many of my friends struggle with picking college majors, I decided to join LearnIt to help others with the difficulties in deciding which career to pursue. Therefore, my goal is to have a widespread impact that allows teens nationwide to be resolute in their decisions about their future.',
+        category: 'Leadership',
+    },
+    {
         name: 'Daniel Zhang',
         email: 'DanielZhang2010@icloud.com',
         role: 'Outreach Manager',
@@ -61,30 +89,40 @@ const teamMembers = [
         description: 'Hi, I’m Shreya Nallagonda, a senior at Greenwood High International School in Bangalore and the International Manager of Learn It. Moving from the United States as a teen helped me value global connections and diverse learning. I’m passionate about design and creativity, and I love finding ways to make education more engaging and accessible. In my free time, I enjoy playing the flute, painting, and volunteering. Through Learn It, I hope to help the organization grow internationally and inspire more students.',
         category: 'International & Global Affairs',
     },
-    {   
-        name: 'Avi Singh',
-        email: 'avisingh5876@gmail.com',
-        role: 'Vice President',
-        img: Avi,
-        description: 'Hi! My name is Avi Singh and I’m the current Co-Vice President of Learn It. I’m a junior at Westborough High School. I aspire to major in biology in college with a pre-dental track. In my free time, I’m a part of my high school’s varsity soccer and outdoor track teams. I’m also a Co-Founder and Co-President of the philanthropy club at my high school,  a member of HOSA, on my student council’s executive board and part of my town’s youth commission. I joined LearnIt in order to assist students with career paths and college applications as I know it can be a very nerve-racking experience, and I noticed there aren’t many free resources for students to gain access to such information.',
-        category: 'Leadership',
+    {
+        name: 'Arnav Sharma',
+        email: 'arnavsharma06@gmail.com',
+        role: 'Technical Lead',
+        img: Arnav,
+        description: 'Hi, I’m Arnav Sharma, the Technical Lead at Learn It, where I build and maintain the website and the systems behind it. I’m a Computer Science and Physics double major at UMass Amherst, with interests spanning AI, security, and systems. Outside of class I’m part of AFROTC, and like to spend my free time climbing, lifting, and training mma/bjj. I joined Learn It because I don’t think access to good guidance should depend on who you happen to know, and building the platform that delivers it is where I can help most.',
+        category: 'Technology',
     },
-    {   
-        name: 'Kush Sinha',
-        email: 'kushsinha8119@gmail.com',
-        role: 'Vice President',
-        img: Kush,
-        description: "Hi, I'm Kush Sinha and I'm the vice president of Learn It. Currently, I am a junior at Westborough High School where I lead/take part in many STEM-oriented clubs and activities. I'm passionate about computer engineering and like to code in my free time. I also enjoy playing basketball, reading, and going to the gym. I joined Learn It because it gives me an opportunity to help others that are concerned about their future, much like how I used to be. I hope to make a real difference through this institution.",
-        category: 'Leadership',
+    {
+        name: 'Himal Bokka',
+        email: 'himalkumar2020@gmail.com',
+        role: 'Co-President',
+        img: Himal,
+        description: 'Hi, I’m Himal Bokka, the Co-President of Learn It and a student at Carmel High School. I’m passionate about expanding STEM and career education opportunities and want to have a lasting impact through this organization. At school, I’m involved in HOSA, track and field, and other medical-related activities. I enjoy collaborating with others to bring new ideas and initiatives to bigger causes. My goal is to grow Learn It into a global platform that provides meaningful and accessible opportunities for all students.',
+        category: 'Past Leadership',
+    },
+    {
+        name: 'Merav Sriram',
+        email: 'meravsriram@gmail.com',
+        role: 'Co-President',
+        img: Merav,
+        description: 'Merav Sriram is a former Co-President of Learn It, where he was dedicated to expanding access to educational resources worldwide. At Westborough High School, he serves as President of both the DECA Chapter and the Entrepreneurship Club, leading peers in business, innovation, and leadership. Beyond academics, Merav plays Varsity Soccer and enjoys staying active through sports. In his free time, he loves listening to music, which fuels his creativity and focus. Passionate about making a lasting difference, Merav saw Learn It as the perfect platform to scale his mission globally—where LearnIt\'s efforts and impact are already gaining international recognition.',
+        category: 'Past Leadership',
     },
 
 ];
 
 const categories = [
-    "Leadership",
-    "Outreach",
-    "Media",
-    "International & Global Affairs",
+    { name: "Leadership", heading: "Leadership Team" },
+    { name: "Technology", heading: "Technology Team" },
+    { name: "Outreach", heading: "Outreach Team" },
+    { name: "Media", heading: "Media Team" },
+    { name: "International & Global Affairs", heading: "International & Global Affairs Team" },
+    { name: "Past Leadership", heading: "Past Leadership" },
 ]
 
 
@@ -96,15 +134,15 @@ const Team = () => {
 
                 {categories.map(roleCategory => {
                     return (
-                    <div key={roleCategory}>
-                        <div className="text-center text-4xl font-bold text-gray-700 mb-4 tracking-tight">{roleCategory === "President" ? "Leadership" : `${roleCategory} Team`}</div>
-                        
+                    <div key={roleCategory.name}>
+                        <div className="text-center text-4xl font-bold text-gray-700 mb-4 tracking-tight">{roleCategory.heading}</div>
+
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mb-10">
-                            {teamMembers.filter(member => member.category === roleCategory).map(member => {
+                            {teamMembers.filter(member => member.category === roleCategory.name).map(member => {
                                 return(
                                     <div key={member.name} className="bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col items-center p-6 border border-blue-100 hover:shadow-2xl transition-all duration-200 group">
                                         <span className="text-gray-800 text-3xl font-bold mb-2">{member.role}</span>
-                                        <img src={member.img} alt={member.name} className="w-28 h-28 object-cover rounded-full border-4 border-blue-200 mb-4 group-hover:scale-105 transition-transform duration-200 "  />
+                                        <img src={member.img} alt={member.name} className="w-28 h-28 object-cover rounded-full border-4 border-blue-200 mb-4 group-hover:scale-105 transition-transform duration-200" />
                                         <span className="text-4xl font-bold text-blue-900 mb-4">{member.name}</span>
                                         <p className="text-gray-600 text-sm mb-3 text-center min-h-[48px]">{member.description}</p>
                                         <a href={`mailto:${member.email}`} className="text-blue-600 underline hover:text-blue-800 text-sm">{member.email}</a>
